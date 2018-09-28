@@ -1,0 +1,22 @@
+:root {
+  --color-highlight: #2c8Bd9;
+}
+
+html {
+  font-family: Montserrat, sans-serif;
+}
+
+h1, h2, h3, .font-alt {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  transition: color .25s;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-highlight);
+}
