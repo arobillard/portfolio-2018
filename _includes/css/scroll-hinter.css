@@ -1,0 +1,62 @@
+.scroll-hint {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: .25rem;
+  height: 3rem;
+  border-radius: 50px 50px 0 0;
+  overflow: hidden;
+}
+
+.scroll-hint-line {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: .125rem;
+  height: 3rem;
+  background-color: #fff;
+  opacity: .5;
+  border-radius: 5px 5px 0 0;
+}
+
+.scroll-hint-scroller {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+  width: .25rem;
+  height: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  animation: scrollHint 2s infinite cubic-bezier(.75, 0, .25, 1);
+}
+
+@keyframes scrollHint {
+
+  0% {
+    bottom: calc(100% +.25rem);
+  }
+
+  100% {
+    bottom: -1.25rem;
+  }
+
+}
+
+/* @keyframes scrollHint {
+
+  0% {
+    bottom: calc(100% + .5rem);
+  }
+
+  75% {
+    bottom: -1.5rem;
+  }
+
+  100% {
+    bottom: calc(100% + .5rem);
+  }
+
+} */

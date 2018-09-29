@@ -19,12 +19,20 @@
 
 @media only screen and (min-width: 38em) {
 
+    .case-study-preview,
+    .me {
+      min-height: auto;
+      height: 95vh;
+      max-height: 1000px;
+    }
+
   .case-study-preview-img {
     position: absolute;
     left: 52%;
     top: 50%;
     transform: translateY(-50%);
     height: 80vh;
+    max-height: 900px;
     width: auto;
   }
 
@@ -36,8 +44,9 @@
   .me-img {
     position: absolute;
     right: 58%;
-    bottom: 0;
+    bottom: -.25rem;
     height: 100vh;
+    max-height: 1000px;
     width: auto;
   }
 

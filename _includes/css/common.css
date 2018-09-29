@@ -72,13 +72,14 @@ a:focus {
 
 .intro {
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
   background-image: var(--radial-primary);
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   text-shadow: var(--shadow-primary);
+  position: relative;
 }
 
 .intro h1 {
@@ -121,12 +122,18 @@ a:focus {
     text-align: right;
   }
 
-  .footer .nav-foot {
+  .footer .nav-foot,
+  .footer .unit:last-child {
     text-align: left;
   }
 
   .footer .nav-foot ul {
     margin: 0;
+  }
+
+  .footer .nav-foot li {
+    display: inline-block;
+    margin-right: .7rem
   }
 
   .footer .icon-list {
@@ -144,6 +151,10 @@ a:focus {
 
   .title-width {
     max-width: 23em;
+  }
+
+  .footer .nav-foot li {
+    margin-right: .75rem
   }
 
 }

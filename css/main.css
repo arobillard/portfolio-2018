@@ -7,3 +7,4 @@
 {% include css/common.css %}
 {% include css/case-study-preview.css %}
 {% include css/navigation.css %}
+{% include css/scroll-hinter.css %}

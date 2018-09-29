@@ -87,6 +87,10 @@
   background-color: #333;
 }
 
+.nav-at-top.tog-nav-open::after {
+  background-color: var(--color-highlight);
+}
+
 .tog-nav-holder:hover::after,
 .tog-nav-holder:focus::after,
 .tog-nav-holder:active::after {
@@ -197,6 +201,10 @@
 
 .nav-bg-photos img.link-hovered {
   opacity: .25;
+}
+
+.nav-bg-photos img.link-no-hover {
+  display: none;
 }
 
 @media only screen and (min-width: 38em) {

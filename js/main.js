@@ -1,3 +1,21 @@
+// Smooth Scroll
+
+$(document).ready(function(){
+  $(".smooth-scroll").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+
+// Navigation
+
 $('.tog-nav-holder, .skip-to-nav').on('click', function(e) {
   e.preventDefault();
   var isOpen = $('.tog-nav-holder').hasClass('tog-nav-open')
@@ -21,31 +39,36 @@ $('.nav-main a').on('click', function() {
   $('.tog-nav-holder').removeClass('tog-nav-open');
 });
 
-// var targetImage = $(this).attr('id');
-//
-// $('.nav-main a').on('hover', function() {
-//   $(targetImage).toggleClass('link-hovered');
-// )};
-//
-// $('#case-study-1').on('mouseover' function() {
-//   $('#case-study-1-img').addClass('link-hovered');
-// )};
+// Nav hover previews
 
-$('.link-cs1').hover(
-  function() {
+// var cs1IsHovered = $('.link-cs1').hover();
+// var cs1IsFocused = $('.link-cs1').focus();
+//
+// if (!cs1IsFocused) {
+
+  $('.link-cs1').hover(
+    function() {
+      $('#cs1-link-img').addClass('link-hovered');
+    }, function() {
+      $('#cs1-link-img').removeClass('link-hovered');
+    }
+  );
+
+// };
+//
+// if (!cs1IsHovered) {
+
+  $('.link-cs1').focus(function () {
     $('#cs1-link-img').addClass('link-hovered');
-  }, function() {
+    $('#cs1-link-img').siblings().addClass('link-no-hover');
+  });
+
+  $('.link-cs1').focusout(function () {
     $('#cs1-link-img').removeClass('link-hovered');
-  }
-);
+    $('#cs1-link-img').siblings().removeClass('link-no-hover');
+  });
 
-$('.link-cs1').focus(function () {
-  $('#cs1-link-img').addClass('link-hovered');
-});
-
-$('.link-cs1').focusout(function () {
-  $('#cs1-link-img').removeClass('link-hovered');
-});
+// };
 
 $('.link-cs2').hover(
   function() {
@@ -57,10 +80,12 @@ $('.link-cs2').hover(
 
 $('.link-cs2').focus(function () {
   $('#cs2-link-img').addClass('link-hovered');
+  $('#cs2-link-img').siblings().addClass('link-no-hover');
 });
 
 $('.link-cs2').focusout(function () {
   $('#cs2-link-img').removeClass('link-hovered');
+  $('#cs2-link-img').siblings().removeClass('link-no-hover');
 });
 
 $('.link-cs3').hover(
@@ -73,10 +98,12 @@ $('.link-cs3').hover(
 
 $('.link-cs3').focus(function () {
   $('#cs3-link-img').addClass('link-hovered');
+  $('#cs3-link-img').siblings().addClass('link-no-hover');
 });
 
 $('.link-cs3').focusout(function () {
   $('#cs3-link-img').removeClass('link-hovered');
+  $('#cs3-link-img').siblings().removeClass('link-no-hover');
 });
 
 $('.link-me').hover(
@@ -89,10 +116,12 @@ $('.link-me').hover(
 
 $('.link-me').focus(function () {
   $('#me-link-img').addClass('link-hovered');
+  $('#me-link-img').siblings().addClass('link-no-hover');
 });
 
 $('.link-me').focusout(function () {
   $('#me-link-img').removeClass('link-hovered');
+  $('#me-link-img').siblings().removeClass('link-no-hover');
 });
 
 // Scroll Top Nav Change
