@@ -1,13 +1,28 @@
 :root {
   --color-highlight: #2c8Bd9;
+  --color-light-grey: #f2f2f2;
+  --shadow-primary: 0 3px 6px rgba(0, 0, 0, .15);
+  --radial-primary: radial-gradient(var(--color-highlight), #216ead);
 }
 
 html {
   font-family: Montserrat, sans-serif;
 }
 
+body {
+  overflow: hidden scroll;
+}
+
 h1, h2, h3, .font-alt {
   font-family: "Montserrat Alternates", sans-serif;
+}
+
+h1 {
+  color: #fff;
+}
+
+h2, h3 {
+  color: #333;
 }
 
 a {
@@ -19,4 +34,116 @@ a {
 a:hover,
 a:focus {
   color: var(--color-highlight);
+}
+
+.footer a {
+  color: #ccc;
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: var(--color-highlight);
+}
+
+.flex-v-middle {
+  display: flex;
+  align-items: center;
+}
+
+.text-shadow {
+  text-shadow: var(--shadow-primary);
+}
+
+/* ---------- Colors ---------- */
+
+.text-ccc {
+  color: #ccc;
+}
+
+.bg-lg {
+  background-color: var(--color-light-grey);
+}
+
+.bg-dg {
+  background-color: #333;
+}
+
+/* ---------- Intro ---------- */
+
+.intro {
+  width: 100vw;
+  height: 100vh;
+  background-image: var(--radial-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: var(--shadow-primary);
+}
+
+.intro h1 {
+  line-height: 1;
+}
+
+.intro h1 span:first-child {
+  font-weight: 300;
+}
+
+.title-width {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 15em;
+}
+
+.icon-list a {
+  text-shadow: var(--shadow-primary);
+}
+
+@media only screen and (min-width: 25em) {
+
+  .intro h1 {
+    line-height: 1;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .intro h1 {
+    line-height: 1;
+  }
+
+  .title-width {
+    max-width: 18em;
+  }
+
+  .subtitle {
+    text-align: right;
+  }
+
+  .footer .nav-foot {
+    text-align: left;
+  }
+
+  .footer .nav-foot ul {
+    margin: 0;
+  }
+
+  .footer .icon-list {
+    text-align: right;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .intro h1 {
+    line-height: 1;
+  }
+
+
+  .title-width {
+    max-width: 23em;
+  }
+
 }

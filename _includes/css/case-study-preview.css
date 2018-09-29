@@ -1,5 +1,44 @@
-.case-study-preview {
-  height: 95vh;
+.case-study-preview,
+.me {
+  min-height: 95vh;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.case-study-preview-img,
+.me-img {
+  width: 100%;
+  display: block;
+}
+
+.me-img {
+  transform: rotateY(180deg);
+}
+
+@media only screen and (min-width: 38em) {
+
+  .case-study-preview-img {
+    position: absolute;
+    left: 52%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80vh;
+    width: auto;
+  }
+
+  .case-study-preview-img-alt {
+    left: auto;
+    right: 52%;
+  }
+
+  .me-img {
+    position: absolute;
+    right: 58%;
+    bottom: 0;
+    height: 100vh;
+    width: auto;
+  }
+
 }

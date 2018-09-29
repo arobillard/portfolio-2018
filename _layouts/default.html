@@ -9,16 +9,87 @@
   <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,400i,700,700i|Montserrat:400,400i,700,700i" rel="stylesheet">
 </head>
-<body>
+<body class="">
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a class="skip-to-nav" href="#nav">Jump to navigation</a></li>
+  </ul>
   <header>
-    <!-- {% include nav.html navclass='nav-main' listgrouptype='list-group' spacing='push-0' fontsize=''%} -->
+    <a class="tog-nav-holder nav-at-top" href="#footer-nav">
+      <div class="tog-nav">
+        <span class="tog tog-top"></span>
+        <span class="tog tog-middle"></span>
+        <span class="tog tog-bottom"></span>
+      </div>
+    </a>
+    <div class="slide-nav flex-v-middle">
+      <div class="nav-bg-photos">
+        <img id="cs1-link-img" src="images/laptop-example.png" alt="">
+        <img id="cs2-link-img" src="images/laptop-example.png" alt="">
+        <img id="cs3-link-img" src="images/laptop-example.png" alt="">
+        <img id="me-link-img" src="images/adamheadshot-bw.png" alt="">
+      </div>
+      <div class="wrapper gutter">
+        {% include nav.html navid="nav" navclass='nav-main bold text-shadow' ulclass='list-group push-0 peta' liclass='pad-t-1-2 pad-b-1-2' aclass='text-ccc'%}
+      </div>
+    </div>
   </header>
-  <main id="main">
-    {{content}}
-  </main>
-  <footer>
-    <!-- {% include nav.html navclass="nav-foot" %} -->
-  </footer>
+  <div class="nav-shifter">
+    <main id="main">
+      {{content}}
+    </main>
+    <footer class="footer pad-t-2 pad-b-2 bg-dg text-center">
+      <div class="wrapper gutter grid">
+        <div class="unit [ xs-1 m-1-2 ]">
+          {% include nav.html navid="footer-nav" navclass="nav-foot" ulclass="list-group"%}
+        </div>
+        <div class="unit [ xs-1 m-1-2 ]">
+          <ul class="icon-list list-group-inline push-0">
+            <li class="push-r">
+              <a class="scale inline-block" href="mailto:robi0653@algonquinlive.com">
+                <i class="icon i-24">
+                  <svg><use xlink:href="images/icons.svg#email" /></svg>
+                </i>
+                <span class="icon-label hidden">Email</span>
+              </a>
+            </li>
+            <li class="push-r">
+              <a class="scale inline-block" href="https://www.instagram.com/awillrobillard/">
+                <i class="icon i-24">
+                  <svg><use xlink:href="images/icons.svg#instagram" /></svg>
+                </i>
+                <span class="icon-label hidden bold">@awillrobillard</span>
+              </a>
+            </li>
+            <li class="push-r">
+              <a class="scale inline-block" href="https://www.linkedin.com/in/adam-robillard/">
+                <i class="icon i-24">
+                  <svg><use xlink:href="images/icons.svg#linkedin" /></svg>
+                </i>
+                <span class="icon-label hidden bold">/adam-robillard</span>
+              </a>
+            </li>
+            <li class="push-r">
+              <a class="scale inline-block" href="https://vimeo.com/user71391239">
+                <i class="icon i-24">
+                  <svg><use xlink:href="images/icons.svg#vimeo" /></svg>
+                </i>
+                <span class="icon-label hidden bold">Vimeo</span>
+              </a>
+            </li>
+            <li>
+              <a class="scale inline-block" href="https://adamrobillard.ca/images/robillard-adam-resume.pdf">
+                <i class="icon i-24">
+                  <svg><use xlink:href="images/icons.svg#cv" /></svg>
+                </i>
+                <span class="icon-label hidden bold">Resume</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </body>

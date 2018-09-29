@@ -1,0 +1,237 @@
+.nav-shifter {
+  position: absolute;
+  transition: left 1s cubic-bezier(1,0,0,1);
+  width: 100vw;
+  left: 0;
+}
+
+.slide-nav {
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+  transition: left 1s cubic-bezier(1, 0, 0, 1);
+  position: fixed;
+  left: -100vw;
+  text-align: center;
+  overflow: hidden
+}
+
+.nav-open .nav-shifter {
+  left: 100vw;
+}
+
+.nav-open .slide-nav {
+  left: 0;
+}
+
+.slide-nav a {
+  position: relative;
+}
+
+.slide-nav a:hover,
+.slide-nav a:focus,
+.slide-nav a:active {
+  color: #ccc;
+}
+
+.slide-nav a::after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: -.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: width .5s cubic-bezier(1, 0, 0, 1);
+  background-color: var(--color-highlight);
+  z-index: -1;
+}
+
+.slide-nav a:hover::after,
+.slide-nav a:focus::after,
+.slide-nav a:active::after {
+  width: calc(100% + 1rem);
+}
+
+/* ---------- Nav Tog ---------- */
+
+.tog-nav-holder {
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 1.5rem;
+  left: 1.5rem;
+  background-color: #333;
+  /* border: 3px solid #333; */
+  z-index: 10000000;
+  box-shadow: var(--shadow-primary);
+  transition:
+    box-shadow 1s cubic-bezier(1, 0, 0, 1),
+    background-color 1s cubic-bezier(1, 0, 0, 1),
+    border-color 1s cubic-bezier(1, 0, 0, 1),
+    transform .25s ease-in-out,
+    left 1s cubic-bezier(1, 0, 0, 1);
+}
+
+.nav-at-top {
+  background-color: rgba(51, 51, 51, 0);
+  box-shadow: none;
+}
+
+.tog-nav-holder::after {
+  content: ' ';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width .5s cubic-bezier(1, 0, 0, 1);
+  background-color: var(--color-highlight);
+  z-index: -1;
+}
+
+.nav-at-top::after {
+  background-color: #333;
+}
+
+.tog-nav-holder:hover::after,
+.tog-nav-holder:focus::after,
+.tog-nav-holder:active::after {
+  width: 100%;
+}
+
+/*
+.tog-nav-holder:hover,
+.tag-nav-holder:active,
+.tag-nav-holder:focus {
+  background-color: #fff;
+} */
+
+.tog-nav-holder.tog-nav-open {
+  left: calc(100vw - 5.5rem);
+  border-color: #ccc;
+  background-color: #333;
+  box-shadow: none;
+}
+
+.tog-nav {
+  display: block;
+  position: relative;
+  width: 1.875rem;
+  height: 1.5rem;
+}
+
+.tog-nav .tog {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  background-color: #fff;
+  transition: all 1s cubic-bezier(1, 0, 0, 1);
+  box-shadow: var(--shadow-primary);
+  border-radius: 5px;
+}
+/*
+.nav-at-top .tog {
+  background-color: var(--color-highlight);
+} */
+
+/*
+.tog-nav-open .tog-nav .tog,
+.tog-nav-holder:hover .tog,
+.tog-nav-holder:focus .tog,
+.tog-nav-holder:active .tog {
+  background-color: #fff;
+} */
+
+.tog-nav-open .tog-nav .tog {
+  background-color: #fff;
+}
+
+.tog-top {
+  top: 0;
+}
+
+/* .tog-nav-open .tog-top,
+.tog-nav-open .tog-bottom, */
+.tog-middle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tog-bottom {
+  bottom: 0;
+}
+
+.tog-nav-open .tog-top {
+  transform: translate(-50%, -50%) rotate(45deg);
+  top: 50%;
+  left: 50%;
+}
+
+.tog-nav-open .tog-middle {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  left: 50%;
+  opacity: 0;
+}
+
+.tog-nav-open .tog-bottom {
+  transform: translate(-50%, 50%) rotate(-45deg);
+  left: 50%;
+  bottom: 50%;
+}
+
+.nav-bg-photos img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  z-index: -3;
+  opacity: 0;
+  transition:
+    left .5s cubic-bezier(1, 0, 0, 1),
+    opacity .5s linear;
+}
+
+.nav-bg-photos img#me-link-img {
+  bottom: 0;
+  top: auto;
+  transform: translate(-50%, 0);
+  height: 80vh;
+  width: auto;
+}
+
+.nav-bg-photos img.link-hovered {
+  opacity: .25;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .slide-nav {
+    text-align: left;
+  }
+
+  .nav-bg-photos img {
+    position: absolute;
+    left: 100%;
+    transform: translate(0, -50%);
+    height: 80vh;
+    width: auto;
+  }
+
+  .nav-bg-photos img#me-link-img {
+    bottom: 0;
+    top: auto;
+    transform: translate(0);
+    height: 100vh
+  }
+
+  .nav-bg-photos img.link-hovered {
+    left: 52%;
+  }
+
+}
