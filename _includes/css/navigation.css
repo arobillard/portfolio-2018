@@ -101,7 +101,7 @@
 } */
 
 .tog-nav-holder.tog-nav-open {
-  left: calc(100vw - 5.5rem);
+  left: calc(100vw - 5rem);
   border-color: #ccc;
   background-color: #333;
   box-shadow: none;
@@ -238,6 +238,10 @@
   .tog-nav-holder {
     left: 1.5rem;
     top: 1.5rem;
+  }
+
+  .tog-nav-holder.tog-nav-open {
+    left: calc(100vw - 5.5rem);
   }
 
 }
