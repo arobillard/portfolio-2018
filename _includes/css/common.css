@@ -60,6 +60,7 @@ a:focus {
   color: #ccc;
 }
 
+.section-colors section:nth-child(even),
 .bg-lg {
   background-color: var(--color-light-grey);
 }
@@ -127,7 +128,7 @@ a:focus {
     text-align: left;
   }
 
-  .footer .nav-foot ul {
+  .footer ul {
     margin: 0;
   }
 

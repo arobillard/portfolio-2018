@@ -177,6 +177,20 @@
   left: 50%;
   bottom: 50%;
 }
+/*
+.tog-nav-holder:hover .tog-top {
+  width: 50%;
+  transform: translate(-50%, 0) rotate(45deg);
+  top: 61%;
+  left: .3rem;
+}
+
+.tog-nav-holder:hover .tog-bottom {
+  width: 50%;
+  transform: translate(-50%, 0) rotate(-45deg);
+  bottom: 61%;
+  left: .3rem;
+} */
 
 .nav-bg-photos img {
   position: absolute;

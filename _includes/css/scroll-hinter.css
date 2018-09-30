@@ -44,19 +44,3 @@
   }
 
 }
-
-/* @keyframes scrollHint {
-
-  0% {
-    bottom: calc(100% + .5rem);
-  }
-
-  75% {
-    bottom: -1.5rem;
-  }
-
-  100% {
-    bottom: calc(100% + .5rem);
-  }
-
-} */

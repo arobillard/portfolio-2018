@@ -136,3 +136,105 @@ $(function() {
       }
    });
 });
+
+
+// testing
+
+// function isScrolledIntoView(elem)
+// {
+//     var docViewTop = $(window).scrollTop();
+//     var docViewBottom = docViewTop + $(window).height();
+//
+//     var elemTop = $(elem).offset().top;
+//     var elemBottom = elemTop + $(elem).height();
+//
+//     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+// }
+//
+// function Utils() {
+//
+// }
+//
+// Utils.prototype = {
+//     constructor: Utils,
+//     isElementInView: function (element, fullyInView) {
+//         var pageTop = $(window).scrollTop();
+//         var pageBottom = pageTop + $(window).height();
+//         var elementTop = $(element).offset().top;
+//         var elementBottom = elementTop + $(element).height();
+//
+//         if (fullyInView === true) {
+//             return ((pageTop < elementTop) && (pageBottom > elementBottom));
+//         } else {
+//             return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
+//         }
+//     }
+// };
+//
+// var Utils = new Utils();
+//
+// var isElementInView = Utils.isElementInView($('#section-2'), false);
+//
+// if (isElementInView) {
+//     console.log('in view');
+//     $('#section-2').addClass('bg-green');
+// } else {
+//     console.log('out of view');
+//     $('#section-2').removeClass('bg-dg');
+// }
+
+(function($) {
+
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *     the user visible viewport of a web browser.
+   *     only accounts for vertical position, not horizontal.
+   */
+
+  $.fn.visible = function(partial) {
+
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+
+})(jQuery);
+
+// $(window).scroll(function(event) {
+//
+//   $('#section-2').each(function(i, el) {
+//     // var el = $(el);
+//     if ($('#section-2').visible(true)) {
+//       $('#section-2').addClass("bg-dg");
+//     } else {
+//       $('#section-2').removeClass("bg-dg");
+//     }
+//   });
+//
+// });
+
+$(window).scroll(function(event) {
+
+  $('.case-study-preview-img, .me-img').each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("case-study-preview-img-in");
+    } else {
+      el.removeClass("case-study-preview-img-in");
+    }
+  });
+
+});

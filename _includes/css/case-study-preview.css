@@ -28,26 +28,52 @@
 
   .case-study-preview-img {
     position: absolute;
-    left: 52%;
     top: 50%;
     transform: translateY(-50%);
     height: 80vh;
     max-height: 900px;
     width: auto;
+    opacity: 0;
+    transition:
+      left 1s cubic-bezier(.5, 0, .5, 1),
+      right 1s cubic-bezier(.5, 0, .5, 1),
+      opacity 1.5s linear;
   }
 
-  .case-study-preview-img-alt {
-    left: auto;
+  .case-study-preview-img-right {
+    left: 100%;
+  }
+
+  .case-study-preview-img-in.case-study-preview-img-right {
+    opacity: 1;
+    left: 52%;
+  }
+
+  .case-study-preview-img-left {
+    right: 100%;
+  }
+
+  .case-study-preview-img-in.case-study-preview-img-left {
     right: 52%;
+    opacity: 1;
   }
 
   .me-img {
     position: absolute;
-    right: 58%;
+    right: 100%;
     bottom: -.25rem;
     height: 100vh;
     max-height: 1000px;
     width: auto;
+    opacity: 0;
+    transition:
+      right 1s cubic-bezier(.5, 0, .5, 1),
+      opacity 1.5s linear;
+  }
+
+  .me-img.case-study-preview-img-in {
+    right: 58%;
+    opacity: 1;
   }
 
 }
