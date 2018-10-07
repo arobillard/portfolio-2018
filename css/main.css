@@ -8,3 +8,5 @@
 {% include css/case-study-preview.css %}
 {% include css/navigation.css %}
 {% include css/scroll-hinter.css %}
+{% include css/case-studies.css %}
+{% include css/qc-study.css %}

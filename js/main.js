@@ -228,12 +228,25 @@ $(function() {
 
 $(window).scroll(function(event) {
 
-  $('.case-study-preview-img, .me-img').each(function(i, el) {
+  $('.case-study-preview-img, .me-img, .main-preview-img').each(function(i, el) {
     var el = $(el);
     if (el.visible(true)) {
       el.addClass("case-study-preview-img-in");
     } else {
       el.removeClass("case-study-preview-img-in");
+    }
+  });
+
+});
+
+$(window).scroll(function(event) {
+
+  $('.preview-holder').each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("preview-holder-in");
+    } else {
+      el.removeClass("preview-holder-in");
     }
   });
 

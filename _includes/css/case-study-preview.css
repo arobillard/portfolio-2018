@@ -1,10 +1,14 @@
 .case-study-preview,
 .me {
-  min-height: 95vh;
+  padding: 2.6rem 0;
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
+}
+
+.me {
+  padding: 0;
 }
 
 .case-study-preview-img,
@@ -24,6 +28,7 @@
       min-height: auto;
       height: 95vh;
       max-height: 1000px;
+      padding: 0;
     }
 
   .case-study-preview-img {
@@ -38,6 +43,17 @@
       left 1s cubic-bezier(.5, 0, .5, 1),
       right 1s cubic-bezier(.5, 0, .5, 1),
       opacity 1.5s linear;
+  }
+
+  .case-study-preview-img.qc-prev {
+    height: 75vh;
+  }
+
+  .csp-quidcan {
+    transform: none;
+    top: 5%;
+    height: 172%;
+    max-height: none;
   }
 
   .case-study-preview-img-right {
@@ -56,6 +72,10 @@
   .case-study-preview-img-in.case-study-preview-img-left {
     right: 52%;
     opacity: 1;
+  }
+
+  .case-study-preview-img-in.case-study-preview-img-left.qc-prev {
+    right: 54%;
   }
 
   .me-img {
