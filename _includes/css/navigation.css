@@ -1,7 +1,7 @@
 .slide-nav {
   width: 100vw;
   height: 100vh;
-  background-color: #333;
+  background-color: var(--color-dark-grey);
   transition: left 1s cubic-bezier(1, 0, 0, 1);
   position: fixed;
   left: -100vw;
@@ -54,7 +54,7 @@
   justify-content: center;
   top: 1.3rem;
   left: 1.3rem;
-  background-color: #333;
+  background-color: var(--color-dark-grey);
   z-index: 10000000;
   box-shadow: var(--shadow-primary);
   transition:
@@ -83,7 +83,7 @@
 }
 
 .home .nav-at-top::after {
-  background-color: #333;
+  background-color: var(--color-dark-grey);
 }
 
 .home .nav-at-top.tog-nav-open::after {
@@ -99,7 +99,7 @@
 .tog-nav-holder.tog-nav-open {
   left: calc(100vw - 5rem);
   border-color: #ccc;
-  background-color: #333;
+  background-color: var(--color-dark-grey);
   box-shadow: none;
 }
 

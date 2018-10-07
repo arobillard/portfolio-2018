@@ -1,4 +1,5 @@
 :root {
+  --color-dark-grey: #333;
   --color-highlight: #2c8Bd9;
   --color-highlight-dark: #1a5c93;
   --color-light-grey: #f2f2f2;
@@ -18,8 +19,12 @@ h1, h2, h3, .font-alt {
   font-family: "Montserrat Alternates", sans-serif;
 }
 
+h1 {
+  color: var(--color-dark-grey);
+}
+
 h2, h3 {
-  color: #333;
+  color: var(--color-dark-grey);
 }
 
 a {
@@ -78,7 +83,7 @@ p > a:focus {
 }
 
 .bg-dg {
-  background-color: #333;
+  background-color: var(--color-dark-grey);
 }
 
 /* ---------- Spacing ---------- */
