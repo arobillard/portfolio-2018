@@ -52,8 +52,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 1rem;
-  left: 1rem;
+  top: 1.3rem;
+  left: 1.3rem;
   background-color: #333;
   z-index: 10000000;
   box-shadow: var(--shadow-primary);
@@ -222,12 +222,21 @@
   }
 
   .tog-nav-holder {
-    left: 1.5rem;
-    top: 1.5rem;
+    left: 1.4rem;
+    top: 1.4rem;
   }
 
   .tog-nav-holder.tog-nav-open {
     left: calc(100vw - 5.5rem);
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .tog-nav-holder {
+    top: 1.5rem;
+    left: 1.5rem;
   }
 
 }

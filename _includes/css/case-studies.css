@@ -1,12 +1,11 @@
-.cs-header {
-  position: relative;
-  overflow: hidden;
+.case-study {
+  padding-top: 2.6rem;
 }
 
 @media only screen and (min-width: 38em) {
 
-  .cs-header {
-
+  .case-study {
+    padding-top: 0;
   }
 
 }
