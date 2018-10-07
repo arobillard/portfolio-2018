@@ -41,6 +41,23 @@ $('.nav-main a').on('click', function() {
 
 // Nav hover previews
 
+$('.link-home').hover(
+  function() {
+    $('#home-link-img').addClass('link-hovered');
+  }, function() {
+    $('#home-link-img').removeClass('link-hovered');
+  }
+);
+$('.link-home').focus(function () {
+  $('#home-link-img').addClass('link-hovered');
+  $('#home-link-img').siblings().addClass('link-no-hover');
+});
+
+$('.link-home').focusout(function () {
+  $('#home-link-img').removeClass('link-hovered');
+  $('#home-link-img').siblings().removeClass('link-no-hover');
+});
+
 // var cs1IsHovered = $('.link-cs1').hover();
 // var cs1IsFocused = $('.link-cs1').focus();
 //

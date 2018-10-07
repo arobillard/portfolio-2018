@@ -217,6 +217,10 @@
     height: 100vh
   }
 
+  .nav-bg-photos img#home-link-img {
+    height: 70vh;
+  }
+
   .nav-bg-photos img.link-hovered {
     left: 52%;
   }
