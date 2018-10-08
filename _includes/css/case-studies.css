@@ -2,6 +2,11 @@
   font-family: Roboto, sans-serif;
 }
 
+.amces-og-logo {
+  width: 100%;
+  max-width: 20rem;
+}
+
 .color-preview {
   border-radius: 1000px;
   display: flex;
@@ -12,11 +17,19 @@
   color: #fff;
 }
 
-.cp-primary {
+.cp-am-primary {
+  background-color: #00558c;
+}
+
+.cp-am-secondary {
+  background-color: #75787b;
+}
+
+.cp-tt-primary {
   background-color: #00953b;
 }
 
-.cp-secondary {
+.cp-tt-secondary {
   background-color: #666;
 }
 
@@ -111,6 +124,14 @@
     height: 70vh;
   }
 
+  .amces-sketch {
+    height: 25vh;
+  }
+
+  .am-new-logo {
+    height: 12vh;
+  }
+
   .tt-products {
     height: 60vh;
   }
@@ -119,6 +140,7 @@
     height: 40vh;
   }
 
+  .case-study-preview-img-in.main-preview-img-left.amces-sketch,
   .case-study-preview-img-in.main-preview-img-left.tt-products {
     right: 55%;
   }
@@ -143,6 +165,10 @@
     display: none;
   }
 
+  .push-0 {
+    margin-bottom: 0;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -164,6 +190,18 @@
     margin-bottom: 3rem;
   }
 
+  .amces-sketch {
+    height: 25vh;
+  }
+
+  .am-new-logo {
+    height: 25vh;
+  }
+
+  .case-study-preview-img-in.main-preview-img-left.am-new-logo {
+    right: 55%;
+  }
+
   .tt-products {
     height: 90vh;
   }
@@ -177,8 +215,17 @@
     height: 90vh;
   }
 
+  .case-study-preview-img-in.main-preview-img-left.stand-banner,
   .case-study-preview-img-in.main-preview-img-left.bourassa-preview {
     right: 57%;
+  }
+
+  .case-study-preview-img-in.main-preview-img-left.amces-sketch {
+    right: 50%;
+  }
+
+  .push-0 {
+    margin-bottom: 0;
   }
 
 }
