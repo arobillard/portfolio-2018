@@ -1,11 +1,164 @@
-.case-study {
+.roboto {
+  font-family: Roboto, sans-serif;
+}
+
+.color-preview {
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  color: #fff;
+}
+
+.cp-primary {
+  background-color: #00953b;
+}
+
+.cp-secondary {
+  background-color: #666;
+}
+
+.case-study h1 {
   padding-top: 2.6rem;
+}
+
+.main-preview {
+  padding: 2.6rem 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-preview-img {
+  width: 100%;
+  display: block;
+}
+
+.tt-products {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.qc-gallery {
+  overflow: scroll;
+}
+
+.qc-gallery .grid {
+  width: 350vw;
 }
 
 @media only screen and (min-width: 38em) {
 
-  .case-study {
+  .case-study h1 {
     padding-top: 0;
+  }
+
+  .main-preview {
+    min-height: 95vh;
+    max-height: 1000px;
+    padding: 0;
+    margin-bottom: 2.8rem;
+  }
+
+  .main-preview-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80vh;
+    max-height: 900px;
+    width: auto;
+    opacity: 0;
+    transition:
+      left 1s cubic-bezier(.5, 0, .5, 1),
+      right 1s cubic-bezier(.5, 0, .5, 1),
+      opacity 1.5s linear;
+  }
+
+  .main-preview-img-left {
+    right: 100%;
+  }
+
+  .case-study-preview-img-in.main-preview-img-left {
+    right: 52%;
+    opacity: 1;
+  }
+
+  .claire-preview,
+  .bourassa-preview {
+    height: 70vh;
+  }
+
+  .tt-products {
+    height: 60vh;
+  }
+
+  .tt-visuals {
+    height: 40vh;
+  }
+
+  .case-study-preview-img-in.main-preview-img-left.tt-products {
+    right: 55%;
+  }
+
+  .case-study-preview-img-in.main-preview-img-left.claire-preview {
+    right: 60%;
+  }
+
+  .case-study-preview-img-in.main-preview-img-left.bourassa-preview {
+    right: 49%;
+  }
+
+  .qc-gallery {
+    overflow: auto;
+  }
+
+  .qc-gallery .grid {
+    width: 100%;
+  }
+
+  .light-preview {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .case-study-preview-img-in.main-preview-img-left.dark-preview {
+    right: 70%;
+  }
+
+  .light-preview:hover + .case-study-preview-img-in.main-preview-img-left.dark-preview,
+  .case-study-preview-img-in.main-preview-img-left.dark-preview:hover {
+    right: 75%;
+  }
+
+  .light-preview {
+    display: block;
+  }
+
+  .main-preview {
+    margin-bottom: 3rem;
+  }
+
+  .tt-products {
+    height: 90vh;
+  }
+
+  .case-study-preview-img-in.main-preview-img-left.tt-products {
+    right: 60%;
+  }
+
+  .claire-preview,
+  .bourassa-preview {
+    height: 90vh;
+  }
+
+  .case-study-preview-img-in.main-preview-img-left.bourassa-preview {
+    right: 57%;
   }
 
 }
