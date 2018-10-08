@@ -155,51 +155,6 @@ $(function() {
 });
 
 
-// testing
-
-// function isScrolledIntoView(elem)
-// {
-//     var docViewTop = $(window).scrollTop();
-//     var docViewBottom = docViewTop + $(window).height();
-//
-//     var elemTop = $(elem).offset().top;
-//     var elemBottom = elemTop + $(elem).height();
-//
-//     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-// }
-//
-// function Utils() {
-//
-// }
-//
-// Utils.prototype = {
-//     constructor: Utils,
-//     isElementInView: function (element, fullyInView) {
-//         var pageTop = $(window).scrollTop();
-//         var pageBottom = pageTop + $(window).height();
-//         var elementTop = $(element).offset().top;
-//         var elementBottom = elementTop + $(element).height();
-//
-//         if (fullyInView === true) {
-//             return ((pageTop < elementTop) && (pageBottom > elementBottom));
-//         } else {
-//             return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
-//         }
-//     }
-// };
-//
-// var Utils = new Utils();
-//
-// var isElementInView = Utils.isElementInView($('#section-2'), false);
-//
-// if (isElementInView) {
-//     console.log('in view');
-//     $('#section-2').addClass('bg-green');
-// } else {
-//     console.log('out of view');
-//     $('#section-2').removeClass('bg-dg');
-// }
-
 (function($) {
 
   /**
@@ -245,7 +200,7 @@ $(function() {
 
 $(window).scroll(function(event) {
 
-  $('.case-study-preview-img, .me-img, .main-preview-img').each(function(i, el) {
+  $('.case-study-preview-img, .me-img, .main-preview-img, .tt-final-preview-img').each(function(i, el) {
     var el = $(el);
     if (el.visible(true)) {
       el.addClass("case-study-preview-img-in");

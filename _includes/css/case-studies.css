@@ -24,6 +24,7 @@
   padding-top: 2.6rem;
 }
 
+.tt-final-preview,
 .main-preview {
   padding: 2.6rem 0;
   display: flex;
@@ -32,6 +33,12 @@
   overflow: hidden;
 }
 
+.tt-final-preview .library-cta {
+  text-align: center;
+  padding-top: 1.3rem;
+}
+
+.tt-final-preview-img,
 .main-preview-img {
   width: 100%;
   display: block;
@@ -56,6 +63,7 @@
     padding-top: 0;
   }
 
+  .tt-final-preview,
   .main-preview {
     min-height: 95vh;
     max-height: 1000px;
@@ -63,6 +71,12 @@
     margin-bottom: 2.8rem;
   }
 
+  .tt-final-preview {
+    min-height: 50vh;
+    margin-bottom: 0;
+  }
+
+  .tt-final-preview-img,
   .main-preview-img {
     position: absolute;
     top: 50%;
@@ -77,10 +91,16 @@
       opacity 1.5s linear;
   }
 
+  .tt-final-preview-img {
+    height: 35vh;
+  }
+
+  .tt-final-preview-img-left,
   .main-preview-img-left {
     right: 100%;
   }
 
+  .case-study-preview-img-in.tt-final-preview-img,
   .case-study-preview-img-in.main-preview-img-left {
     right: 52%;
     opacity: 1;
