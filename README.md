@@ -2,7 +2,7 @@
 
 #### [adamrobillard.ca](https://adamrobillard.ca)
 
-![](images/adamheadshot-bw.png =200x)
+![](images/adamheadshot-bw.png)
 
 I am the kind of person who listens to a Dungeons & Dragons podcast while lacing up their skates in a hockey dressing room. I am equal parts passionate sports fan and massive nerd. I love learning new things, testing out theories, and discovering what is possible.
 
