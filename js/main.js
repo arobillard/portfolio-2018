@@ -34,7 +34,7 @@ $('.tog-nav-holder, .skip-to-nav').on('click', function(e) {
 
 });
 
-$('.nav-main a').on('click', function() {
+$('.nav-main a.link-me').on('click', function() {
   $('body').removeClass('nav-open');
   $('.tog-nav-holder').removeClass('tog-nav-open');
 });
