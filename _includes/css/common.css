@@ -102,6 +102,14 @@ p > a:focus {
   margin-top: -.65rem;
 }
 
+.push-s {
+  margin-bottom: 1.3rem;
+}
+
+.push-2-s {
+  margin-bottom: 2.6rem;
+}
+
 /* ---------- Intro ---------- */
 
 .intro-home {
@@ -144,6 +152,11 @@ p > a:focus {
 }
 
 @media only screen and (min-width: 38em) {
+
+  .push-s,
+  .push-2-s {
+    margin-bottom: 0;
+  }
 
   .intro-home h1 {
     line-height: 1;
