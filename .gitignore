@@ -11,7 +11,6 @@ _site
 tmp
 
 # Adobe files
-*.pdf
 *.ai
 *.psd
 *.indd
