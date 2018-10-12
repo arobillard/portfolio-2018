@@ -849,7 +849,7 @@ select {
 
 [type="checkbox"]:focus + label::before {
   /* outline: 3px solid #000; */
-  outline: 1px solid var(--color-highlight);
+  /* outline: 1px solid var(--color-highlight); */
   outline: none;
   z-index: 1000;
 }
@@ -1104,7 +1104,7 @@ textarea:focus,
 button:focus,
 select:focus {
   /* outline: 3px solid #000; */
-  outline: 1px solid var(--color-highlight);
+  /* outline: 1px solid var(--color-highlight); */
   outline: none;
   outline-offset: 0;
 }
