@@ -154,6 +154,17 @@ $(function() {
    });
 });
 
+$(function() {
+   $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('.wordmark').addClass('wordmark-scrolled')
+      }
+      if ($(this).scrollTop() < 100) {
+        $('.wordmark').removeClass('wordmark-scrolled')
+      }
+   });
+});
+
 
 (function($) {
 

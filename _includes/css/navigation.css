@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   background-color: var(--color-dark-grey);
-  transition: left 1s cubic-bezier(1, 0, 0, 1);
+  transition: left .75s cubic-bezier(1, 0, 0, 1);
   position: fixed;
   left: -100vw;
   text-align: center;
@@ -58,11 +58,11 @@
   z-index: 10000000;
   box-shadow: var(--shadow-primary);
   transition:
-    box-shadow 1s cubic-bezier(1, 0, 0, 1),
-    background-color 1s cubic-bezier(1, 0, 0, 1),
-    border-color 1s cubic-bezier(1, 0, 0, 1),
+    box-shadow .75s cubic-bezier(1, 0, 0, 1),
+    background-color .75s cubic-bezier(1, 0, 0, 1),
+    border-color .75s cubic-bezier(1, 0, 0, 1),
     transform .25s ease-in-out,
-    left 1s cubic-bezier(1, 0, 0, 1);
+    left .75s cubic-bezier(1, 0, 0, 1);
 }
 
 .home .nav-at-top {
@@ -116,7 +116,7 @@
   height: 4px;
   left: 0;
   background-color: #fff;
-  transition: all 1s cubic-bezier(1, 0, 0, 1);
+  transition: all .75s cubic-bezier(1, 0, 0, 1);
   box-shadow: var(--shadow-primary);
   border-radius: 5px;
 }
@@ -189,7 +189,7 @@
 
   .nav-shifter {
     position: absolute;
-    transition: left 1s cubic-bezier(1,0,0,1);
+    transition: left .75s cubic-bezier(1,0,0,1);
     width: 100vw;
     left: 0;
   }

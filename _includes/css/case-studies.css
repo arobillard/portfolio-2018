@@ -1,5 +1,17 @@
-.roboto {
-  font-family: Roboto, sans-serif;
+.wordmark {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: opacity .5s;
+  z-index: 10;
+}
+
+.wordmark-scrolled {
+  opacity: 0;
+}
+
+.prev-next-indicator i {
+  margin-top: .15rem;
 }
 
 .amces-og-logo {
@@ -73,7 +85,7 @@
 @media only screen and (min-width: 38em) {
 
   .case-study h1 {
-    padding-top: 0;
+    padding-top: 4.2rem;
   }
 
   .tt-final-preview,
@@ -172,6 +184,10 @@
 }
 
 @media only screen and (min-width: 60em) {
+
+  .case-study h1 {
+    padding-top: 4.5rem;
+  }
 
   .case-study-preview-img-in.main-preview-img-left.dark-preview {
     right: 70%;
