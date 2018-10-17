@@ -33,6 +33,10 @@ a {
   transition: color .25s;
 }
 
+.wordmark a {
+  color: var(--color-dark-grey);
+}
+
 a:hover,
 a:focus {
   color: var(--color-highlight);
