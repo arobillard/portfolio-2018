@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>{{page.title}} | Adam Robillard</title>
+  <title>{% if page.title %}{{page.title}} · {% endif %}Adam Robillard</title>
   <meta name="handheldfriendly" content="true">
   <meta name="mobileoptimized" content="240">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -26,9 +26,6 @@
     </main>
     <footer class="footer pad-t-2 pad-b-2 bg-dg text-center">
       <div class="wrapper gutter grid">
-        <!-- <div class="unit [ xs-1 m-1-2 ]">
-        {% include nav.html navid="footer-nav" navclass="nav-foot milli" ulclass="list-group"%}
-      </div> -->
       <div class="unit [ xs-1 m-1-2 ] unit-push-m-1-2">
         <ul class="icon-list list-group-inline">
           <li class="push-r">

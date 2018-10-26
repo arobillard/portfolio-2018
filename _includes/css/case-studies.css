@@ -1,3 +1,7 @@
+.home .wordmark {
+  display: none;
+}
+
 .wordmark {
   position: fixed;
   top: 0;
