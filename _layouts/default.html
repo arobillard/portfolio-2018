@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>{% if page.title %}{{page.title}} · {% endif %}Adam Robillard</title>
-  <meta name="description" content="{{page.description}}">
+  <meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.data.case-studies[page.csNumber].metaDesc}}{% endif %}">
   <meta name="handheldfriendly" content="true">
   <meta name="mobileoptimized" content="240">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,400i,700,700i|Montserrat:400,400i,700,700i" rel="stylesheet">
-  <link rel="shortcut icon" href="{{site.baseurl}}favicon.ico"/>
+  <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico"/>
 </head>
 <body class="{{page.pageClass}}">
   <ul class="skip-links">
@@ -27,65 +27,68 @@
     </main>
     <footer class="footer pad-t-2 pad-b-2 bg-dg text-center">
       <div class="wrapper gutter grid">
-      <div class="unit [ xs-1 m-1-2 ] unit-push-m-1-2">
-        <ul class="icon-list list-group-inline">
-          <li class="push-r">
-            <a class="inline-block" href="mailto:robi0653@algonquinlive.com">
-              <i class="icon i-3-4">
-                <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#email" /></svg>
-              </i>
-              <span class="icon-label hidden">Email</span>
-            </a>
-          </li>
-          <li class="push-r">
-            <a class="inline-block" href="https://github.com/arobillard" target="_blank">
-              <i class="icon i-3-4">
-                <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#github" /></svg>
-              </i>
-              <span class="icon-label hidden bold">arobillard</span>
-            </a>
-          </li>
-          <li class="push-r">
-            <a class="inline-block" href="https://www.instagram.com/awillrobillard/">
-              <i class="icon i-3-4">
-                <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#instagram" /></svg>
-              </i>
-              <span class="icon-label hidden bold">@awillrobillard</span>
-            </a>
-          </li>
-          <li class="push-r">
-            <a class="inline-block" href="https://www.linkedin.com/in/adam-robillard/">
-              <i class="icon i-3-4">
-                <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#linkedin" /></svg>
-              </i>
-              <span class="icon-label hidden bold">/adam-robillard</span>
-            </a>
-          </li>
-          <li class="push-r">
-            <a class="inline-block" href="https://vimeo.com/user71391239">
-              <i class="icon i-3-4">
-                <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#vimeo" /></svg>
-              </i>
-              <span class="icon-label hidden bold">Vimeo</span>
-            </a>
-          </li>
-          <li>
-            <a class="inline-block" href="https://adamrobillard.ca/images/robillard-adam-resume.pdf" target="_blank">
-              <i class="icon i-3-4">
-                <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#cv" /></svg>
-              </i>
-              <span class="icon-label hidden bold">Resume</span>
-            </a>
-          </li>
-        </ul>
+        <div class="unit [ xs-1 ] nav-footer-wrap">
+          {% include nav.html navid='nav-footer' navclass='nav-footer push' ulclass='list-group milli' liclass='push-1-4' %}
+        </div>
+        <div class="unit [ xs-1 m-1-2 ] unit-push-m-1-2">
+          <ul class="icon-list list-group-inline">
+            <li class="push-r">
+              <a class="inline-block" href="mailto:robi0653@algonquinlive.com">
+                <i class="icon i-3-4">
+                  <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#email" /></svg>
+                </i>
+                <span class="icon-label hidden">Email</span>
+              </a>
+            </li>
+            <li class="push-r">
+              <a class="inline-block" href="https://github.com/arobillard" target="_blank">
+                <i class="icon i-3-4">
+                  <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#github" /></svg>
+                </i>
+                <span class="icon-label hidden bold">arobillard</span>
+              </a>
+            </li>
+            <li class="push-r">
+              <a class="inline-block" href="https://www.instagram.com/awillrobillard/">
+                <i class="icon i-3-4">
+                  <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#instagram" /></svg>
+                </i>
+                <span class="icon-label hidden bold">@awillrobillard</span>
+              </a>
+            </li>
+            <li class="push-r">
+              <a class="inline-block" href="https://www.linkedin.com/in/adam-robillard/">
+                <i class="icon i-3-4">
+                  <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#linkedin" /></svg>
+                </i>
+                <span class="icon-label hidden bold">/adam-robillard</span>
+              </a>
+            </li>
+            <li class="push-r">
+              <a class="inline-block" href="https://vimeo.com/user71391239">
+                <i class="icon i-3-4">
+                  <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#vimeo" /></svg>
+                </i>
+                <span class="icon-label hidden bold">Vimeo</span>
+              </a>
+            </li>
+            <li>
+              <a class="inline-block" href="{{site.baseurl}}/images/robillard-adam-resume.pdf" target="_blank">
+                <i class="icon i-3-4">
+                  <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#cv" /></svg>
+                </i>
+                <span class="icon-label hidden bold">Resume</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="unit [ xs-1 m-1-2 ] unit-pull-m-1-2">
+          <small class="text-ccc font-alt">© Adam Robillard 2018</small>
+        </div>
       </div>
-      <div class="unit [ xs-1 m-1-2 ] unit-pull-m-1-2">
-        <small class="text-ccc font-alt">© Adam Robillard 2018</small>
-      </div>
-    </div>
-  </footer>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="{{site.baseurl}}/js/main.js"></script>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{{site.baseurl}}/js/main.js"></script>
 </body>
 </html>

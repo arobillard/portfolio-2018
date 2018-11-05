@@ -1,0 +1,72 @@
+- title: TopTable
+  metaDesc: Case study of the TopTable pattern library designed and developed by Adam Robillard.
+  csLink: toptable
+  layout: case-study
+  previewImg: laptop-example.png
+  previewSide: right
+  prevUnitAlign: unit-pull-m-1-2
+  headerImg: laptop-example.png
+  shortDesc: TopTable is an e-commerce website developed with an in-depth pattern library system. It was design to be easy-to-use, with a product-first design mentality.
+  longDesc: TopTable is an e-commerce pattern library for a table top game store. The pattern library developed a collection of reusable elements to more efficiently build the website. The design goal for the website was to create an e-commerce platform with a focus on ease-of-use and with a product-first design mentality.
+  projectLink: https://arobillard.github.io/ecommerce-pattern-library/
+  projectLinkText: View pattern library
+  category:
+    - Web Design
+    - Web Development
+  client: Algonquin College
+  clientLink: https://algonquindesign.ca
+  role:
+    - Designer
+    - Web Developer
+  year: 2018
+  prevTitleCS: AMCES Rebrand
+  prevLinkCS: amces/
+  nextTitleCS: Quidditch Canada
+  nextLinkCS: quidditch-canada/
+- title: Quidditch Canada
+  metaDesc: Case study of the TopTable pattern library designed and developed by Adam Robillard.
+  csLink: quidditch-canada
+  layout: case-study
+  previewImg: quidcan/quidcan-preview.png
+  previewSide: left qc-prev
+  prevUnitAlign:
+  headerImg: quidcan/qc-intro-banner.jpg
+  shortDesc: Quidditch Canada is the national governing body for the sport of quidditch in Canada. Since 2014, I have designed Team Canada's jersey for the Quidditch World Cup every two years.
+  longDesc: Since 2014, every second year I have worked with Quidditch Canada to create their National Team jersey for the Quidditch World Cup. With each new iteration of the jersey, I have challenged myself to develop new ways to represent Canada's identity and help the team stand out both on the pitch and off.
+  projectLink:
+  projectLinkText:
+  category:
+    - Jersey Design
+    - Sports Design
+  client: Quidditch Canada
+  clientLink: http://quidditchcanada.com/
+  role:
+    - Designer
+  year: 2018
+  prevTitleCS: TopTable
+  prevLinkCS: toptable/
+  nextTitleCS: AMCES Rebrand
+  nextLinkCS: amces/
+- title: AMCES Rebrand
+  metaDesc: Case study of the TopTable pattern library designed and developed by Adam Robillard.
+  csLink: amces
+  layout: case-study
+  previewImg: amces/booth.png
+  previewSide: right
+  prevUnitAlign: unit-pull-m-1-2
+  headerImg: amces/booth-16by9.png
+  shortDesc: AMCES is an Association Management company that works with not-for-profit associations. I created their new brand to better reflect the company's professional, forward thinking business practices.
+  longDesc: AMCES is an association management firm based in Ottawa, ON that works with national and international not-for-profits to help run their organizations and events. The goal for the rebrand was to modernize their brand to better reflect their professionalism and forward thinking business practices.
+  projectLink:
+  projectLinkText:
+  category:
+    - Branding
+  client: AMCES
+  clientLink: https://www.amces.com
+  role:
+    - Designer
+  year: 2018
+  prevTitleCS: Quidditch Canada
+  prevLinkCS: quidditch-canada/
+  nextTitleCS: TopTable
+  nextLinkCS: toptable/

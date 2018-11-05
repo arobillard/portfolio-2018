@@ -17,85 +17,10 @@ description: Portfolio website for Ottawa based graphic designer Adam Robillard.
   </a>
 </header>
 <div class="section-colors">
-  <section id="section-1" class="case-study-preview" tabindex="0">
-    <div class="wrapper gutter grid">
-      <div class="unit [ xs-1 m-1-2 ] pad-t pad-b static">
-        <img class="case-study-preview-img case-study-preview-img-right case-study-preview-img-in" src="{{site.baseurl}}/images/laptop-example.png" alt="">
-      </div>
-      <div class="unit [ xs-1 m-1-2 ] unit-pull-m-1-2 pad-t pad-b">
-        <h2>TopTable</h2>
-        <p>TopTable is an e-commerce website developed with an in-depth pattern library system. It was design to be easy-to-use, with a product-first design mentality.</p>
-        <div class="case-study-view-link font-alt bold push-2 mega">
-          <a href="{{site.baseurl}}/top-table/">
-            <span class="valign-middle inline-block">View case study</span>
-            <i class="icon i-1 ">
-              <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
-            </i>
-          </a>
-        </div>
-        <footer>
-          <h3 class="tags-header push-1-2 kilo no-shadow">Categories</h3>
-          <ol class="list-group-inline milli push-0">
-            <li class="push-r-1-2">Web Design</li>
-            <li class="push-r-1-2">Web Development</li>
-          </ol>
-        </footer>
-      </div>
-    </div>
-  </section>
-  <section id="section-2" class="case-study-preview" tabindex="0">
-    <div class="wrapper gutter grid">
-      <div class="unit [ xs-1 m-1-2 ] pad-t pad-b static">
-        <img class="case-study-preview-img case-study-preview-img-left case-study-preview-img-in qc-prev" src="{{site.baseurl}}/images/quidcan/quidcan-preview.png" alt="">
-      </div>
-      <div class="unit [ xs-1 m-1-2 ] pad-t pad-b">
-        <h2>Quidditch Canada</h2>
-        <p>Quidditch Canada is the national governing body for the sport of quidditch in Canada. Since 2014, I have designed Team Canada's jersey for the Quidditch World Cup every two years.</p>
-        <div class="case-study-view-link font-alt bold push-2 mega">
-          <a href="{{site.baseurl}}/quidditch-canada/">
-            <span class="valign-middle inline-block">View case study</span>
-            <i class="icon i-1 ">
-              <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
-            </i>
-          </a>
-        </div>
-        <footer>
-          <h3 class="tags-header push-1-2 kilo no-shadow">Categories</h3>
-          <ol class="list-group-inline milli push-0">
-            <li class="push-r-1-2">Jersey Design</li>
-            <li class="push-r-1-2">Sports Design</li>
-          </ol>
-        </footer>
-      </div>
-    </div>
-  </section>
-  <section class="case-study-preview" tabindex="0">
-    <div class="wrapper gutter grid">
-      <div class="unit [ xs-1 m-1-2 ] pad-t pad-b static">
-        <img class="case-study-preview-img case-study-preview-img-right case-study-preview-img-in" src="{{site.baseurl}}/images/amces/booth.png" alt="">
-      </div>
-      <div class="unit [ xs-1 m-1-2 ] unit-pull-m-1-2 pad-t pad-b">
-        <h2>AMCES</h2>
-        <p>AMCES is an Association Management company that works with not-for-profit associations. I created their new brand to better reflect the company's professional, forward thinking business practices.</p>
-        <div class="case-study-view-link font-alt bold push-2 mega">
-          <a href="{{site.baseurl}}/amces/">
-            <span class="valign-middle inline-block">View case study</span>
-            <i class="icon i-1 ">
-              <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
-            </i>
-          </a>
-        </div>
-        <footer>
-          <h3 class="tags-header push-1-2 kilo no-shadow">Categories</h3>
-          <ol class="list-group-inline milli push-0">
-            <li class="push-r-1-2">Branding</li>
-            <li class="push-r-1-2">Logo Design</li>
-          </ol>
-        </footer>
-      </div>
-    </div>
-  </section>
-<section id="me" class="me" tabindex="0">
+  {% for caseStudy in site.data.case-studies %}
+    {% include case-study-preview.html %}
+  {% endfor %}
+  <section id="me" class="me" tabindex="0">
     <div class="wrapper gutter grid">
       <div class="unit [ xs-1 m-1-2 ] unit-push-m-1-2 pad-t-2 pad-b">
         <h2>Me</h2>

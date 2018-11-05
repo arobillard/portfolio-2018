@@ -1,90 +1,98 @@
-<!DOCTYPE html>
-<html lang="en-ca">
-<head>
-  <meta charset="utf-8">
-  <title>{% if page.title %}{{page.title}} · {% endif %}Adam Robillard</title>
-  <meta name="handheldfriendly" content="true">
-  <meta name="mobileoptimized" content="240">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,400i,700,700i|Montserrat:400,400i,700,700i" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.ico"/>
-</head>
-<body class="case-study">
-  <ul class="skip-links">
-    <li><a href="#main">Jump to main content</a></li>
-    <li><a class="skip-to-nav" href="#nav">Jump to navigation</a></li>
-  </ul>
-  {% include nav-slider.html %}
-  <div class="nav-shifter">
-    <main id="main">
-      <div class="wordmark island text-right">
-        <a class="inline-block m-hidden exa font-alt text-shadow push-0 pad-t-1-4" href="{{site.baseurl}}/">A<span class="bold">R</span></a>
-        <a class="inline-block xs-s-hidden tera font-alt text-shadow push-0 pad-t-1-4" href="{{site.baseurl}}/">Adam <span class="bold">Robillard</span></a>
+---
+layout: default
+---
+{% assign csHeader=site.data.case-studies[page.csNumber] %}
+  <header class="cs-header pad-t-2 pad-b-2">
+    <div class="wrapper pad-t-2 pad-b-2">
+      <h1 class="text-center gutter push-2">{{csHeader.title}}</h1>
+      <p class="max-length text-center-m gutter push-2">{{csHeader.longDesc}}</p>
+      {% if csHeader.projectLink %}
+      <div class="font-alt bold mega text-center pad-t pad-b">
+        <a href="{{csHeader.projectLink}}" target="_blank">
+          <span class="valign-middle inline-block">{{csHeader.projectLinkText}}</span>
+          <i class="icon i-1 ">
+            <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
+          </i>
+        </a>
       </div>
-      {{content}}
-    </main>
-    <footer class="footer pad-t-2 pad-b-2 bg-dg text-center">
-      <div class="wrapper gutter grid">
-      <div class="unit [ xs-1 m-1-2 ] unit-push-m-1-2">
-        <ul class="icon-list list-group-inline">
-          <li class="push-r">
-            <a class="inline-block" href="mailto:robi0653@algonquinlive.com">
-              <i class="icon i-3-4">
-                <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#email" /></svg>
-              </i>
-              <span class="icon-label hidden">Email</span>
-            </a>
-          </li>
-          <li class="push-r">
-            <a class="inline-block" href="https://github.com/arobillard" target="_blank">
-              <i class="icon i-3-4">
-                <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#github" /></svg>
-              </i>
-              <span class="icon-label hidden bold">arobillard</span>
-            </a>
-          </li>
-          <li class="push-r">
-            <a class="inline-block" href="https://www.instagram.com/awillrobillard/">
-              <i class="icon i-3-4">
-                <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#instagram" /></svg>
-              </i>
-              <span class="icon-label hidden bold">@awillrobillard</span>
-            </a>
-          </li>
-          <li class="push-r">
-            <a class="inline-block" href="https://www.linkedin.com/in/adam-robillard/">
-              <i class="icon i-3-4">
-                <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#linkedin" /></svg>
-              </i>
-              <span class="icon-label hidden bold">/adam-robillard</span>
-            </a>
-          </li>
-          <li class="push-r">
-            <a class="inline-block" href="https://vimeo.com/user71391239">
-              <i class="icon i-3-4">
-                <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#vimeo" /></svg>
-              </i>
-              <span class="icon-label hidden bold">Vimeo</span>
-            </a>
-          </li>
-          <li>
-            <a class="inline-block" href="https://adamrobillard.ca/images/robillard-adam-resume.pdf">
-              <i class="icon i-3-4">
-                <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#cv" /></svg>
-              </i>
-              <span class="icon-label hidden bold">Resume</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="unit [ xs-1 m-1-2 ] unit-pull-m-1-2">
-        <small class="text-ccc font-alt">© Adam Robillard 2018</small>
+      {% endif %}
+      {% if csHeader.projectLink %}
+        <a class="block" href="{{csHeader.projectLink}}" target="_blank">
+      {% endif %}
+        <div class="island">
+          <div class="embed embed-16by9">
+            <img class="embed-item" src="{{site.baseurl}}/images/{{csHeader.headerImg}}" alt="">
+          </div>
+        </div>
+      {% if csHeader.projectLink %}
+        </a>
+      {% endif %}
+      <div class="grid island-1-2">
+        <div class="unit [ xs-1-2 m-1-4 ] island-1-2">
+          <p class="font-alt bold push-1-2">Categories</p>
+          <ol class="list-group-inline milli push-0">
+            {% for cat in csHeader.category %}
+              <li class="push-r-1-2">{{cat}}</li>
+            {% endfor %}
+          </ol>
+        </div>
+        <div class="unit [ xs-1-2 m-1-4 ] island-1-2">
+          <p class="font-alt bold push-1-2">Client</p>
+          <ol class="list-group-inline milli push-0">
+            <li class="push-r-1-2">
+              {% if csHeader.clientLink %}
+                <a class="" href="{{csHeader.clientLink}}" target="_blank">
+              {% endif %}
+              {{csHeader.client}}
+              {% if csHeader.clientLink %}
+                </a>
+              {% endif %}
+            </li>
+          </ol>
+        </div>
+        <div class="unit [ xs-1-2 m-1-4 ] island-1-2">
+          <p class="font-alt bold push-1-2">Role</p>
+          <ol class="list-group milli push-0">
+            {% for role in csHeader.role %}
+              <li class="push-r-1-2">{{role}}</li>
+            {% endfor %}
+          </ol>
+        </div>
+        <div class="unit [ xs-1-2 m-1-4 ] island-1-2">
+          <p class="font-alt bold push-1-2">Year</p>
+          <ol class="list-group-inline milli push-0">
+            <li class="push-r-1-2">{{csHeader.year}}</li>
+          </ol>
+        </div>
       </div>
     </div>
-  </footer>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="{{site.baseurl}}/js/main.js"></script>
-</body>
-</html>
+  </header>
+
+{{content}}
+
+<footer class="pad-t-2 pad-b-2">
+  <ul class="grid wrapper gutter list-group prev-next-indicator push-0">
+    <li class="unit [ xs-1-2 ]">
+      <a href="{{site.baseurl}}/{{csHeader.prevLinkCS}}">
+        <i class="icon i-3-4 valign-top">
+          <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#left-indicator" /></svg>
+        </i>
+        <div class="inline-block valign-top">
+          <span class="inline-block bold">Previous</span>
+          <p class="milli push-0 xs-hidden">{{csHeader.prevTitleCS}}</p>
+        </div>
+      </a>
+    </li>
+    <li class="unit [ xs-1-2 ] text-right">
+      <a href="{{site.baseurl}}/{{csHeader.nextLinkCS}}">
+        <div class="inline-block valign-top">
+          <span class="valign-middle inline-block bold">Next</span>
+          <p class="milli push-0 xs-hidden">{{csHeader.nextTitleCS}}</p>
+        </div>
+        <i class="icon i-3-4 valign-top">
+          <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
+        </i>
+      </a>
+    </li>
+  </ul>
+</footer>

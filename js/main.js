@@ -1,3 +1,7 @@
+$('.nav-main a').attr('tabindex', '-1');
+$('.nav-footer-wrap').addClass('hidden');
+$('.tog-nav-holder').addClass('nav-at-top');
+
 // Smooth Scroll
 
 $(document).ready(function(){

@@ -1,0 +1,25 @@
+<section id="section-1" class="case-study-preview" tabindex="0">
+  <div class="wrapper gutter grid">
+    <div class="unit [ xs-1 m-1-2 ] pad-t pad-b static">
+      <img class="case-study-preview-img case-study-preview-img-{{caseStudy.previewSide}} case-study-preview-img-in" src="{{site.baseurl}}/images/{{caseStudy.previewImg}}" alt="">
+    </div>
+    <div class="unit [ xs-1 m-1-2 ] {{caseStudy.prevUnitAlign}} pad-t pad-b">
+      <h2>{{caseStudy.title}}</h2>
+      <p>{{caseStudy.shortDesc}}</p>
+      <div class="case-study-view-link font-alt bold push-2 mega">
+        <a href="{{site.baseurl}}/{{caseStudy.csLink}}/">
+          <span class="valign-middle inline-block">View case study</span>
+          <i class="icon i-1 ">
+            <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
+          </i>
+        </a>
+      </div>
+      <footer>
+        <h3 class="tags-header push-1-2 kilo no-shadow">Categories</h3>
+        <ol class="list-group-inline milli push-0">
+          <li class="push-r-1-2">{{caseStudy.category}}</li>
+        </ol>
+      </footer>
+    </div>
+  </div>
+</section>

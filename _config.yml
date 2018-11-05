@@ -1,4 +1,4 @@
-markdown: redcarpet
 baseurl: ""
 exclude: ['README.md']
 permalink: pretty
+port: 4001

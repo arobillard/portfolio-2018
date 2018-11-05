@@ -39,7 +39,8 @@
 
 .slide-nav a:hover::after,
 .slide-nav a:focus::after,
-.slide-nav a:active::after {
+.slide-nav a:active::after,
+.slide-nav a.current::after {
   width: calc(100% + 1rem);
 }
 
@@ -232,6 +233,15 @@
 
   .tog-nav-holder.tog-nav-open {
     left: calc(100vw - 5.5rem);
+  }
+
+  .nav-footer {
+    text-align: left;
+  }
+
+  .nav-footer .list-group li {
+    display: inline-block;
+    margin-right: .75rem;
   }
 
 }

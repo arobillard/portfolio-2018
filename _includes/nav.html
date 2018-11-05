@@ -1,9 +1,9 @@
 <nav id="{{include.navid}}" class="{{include.navclass}}">
   <ul class="{{include.ulclass}}">
-    <li class="{{include.liclass}}"><a class="link-home {{include.aclass}}{% if page.url == '' %}current{% endif %}" tabindex="-1" href="{{site.baseurl}}/">Home</a></li>
-    <li class="{{include.liclass}}"><a class="link-cs1 {{include.aclass}}{% if page.url == '' %}current{% endif %}" tabindex="-1" href="{{site.baseurl}}/top-table/">Top Table</a></li>
-    <li class="{{include.liclass}}"><a class="link-cs2 {{include.aclass}}{% if page.url == '' %}current{% endif %}" tabindex="-1" href="{{site.baseurl}}/quidditch-canada/">Quidditch Canada</a></li>
-    <li class="{{include.liclass}}"><a class="link-cs3 {{include.aclass}}{% if page.url == '' %}current{% endif %}" tabindex="-1" href="{{site.baseurl}}/amces/">AMCES</a></li>
-    <li class="{{include.liclass}}"><a class="link-me {{include.aclass}}{% if page.url == '' %}current{% endif %}" tabindex="-1" href="{{site.baseurl}}/#me">Me</a></li>
+    <li class="{{include.liclass}}"><a class="link-home {{include.aclass}} {% if page.url == '/' %}current{% endif %}" href="{{site.baseurl}}/">Home</a></li>
+    <li class="{{include.liclass}}"><a class="link-cs1 {{include.aclass}} {% if page.url contains 'toptable' %}current{% endif %}" href="{{site.baseurl}}/toptable/">Top Table</a></li>
+    <li class="{{include.liclass}}"><a class="link-cs2 {{include.aclass}} {% if page.url contains 'quidditch' %}current{% endif %}" href="{{site.baseurl}}/quidditch-canada/">Quidditch Canada</a></li>
+    <li class="{{include.liclass}}"><a class="link-cs3 {{include.aclass}} {% if page.url contains 'amces' %}current{% endif %}" href="{{site.baseurl}}/amces/">AMCES</a></li>
+    <li class="{{include.liclass}}"><a class="link-me {{include.aclass}}" href="{{site.baseurl}}/#me">Me</a></li>
   </ul>
 </nav>
