@@ -33,6 +33,18 @@
   color: #fff;
 }
 
+.case-study section:nth-child(odd) {
+  background-color: var(--color-light-grey);
+}
+
+.cp-pol-primary {
+  background-color: #09A38C;
+}
+
+.cp-pol-secondary {
+  background-color: #333;
+}
+
 .cp-am-primary {
   background-color: #00558c;
 }
@@ -84,6 +96,22 @@
 
 .qc-gallery .grid {
   width: 350vw;
+}
+
+.case-study-preview li {
+  position: relative;
+}
+
+.case-study-preview li::after {
+  content: '|';
+  position: absolute;
+  top: 50%;
+  right: -1rem;
+  transform: translateY(-50%);
+}
+
+.case-study-preview li:last-child::after {
+  display: none;
 }
 
 @media only screen and (min-width: 38em) {

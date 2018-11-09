@@ -7,6 +7,11 @@
   --radial-primary: radial-gradient(var(--color-highlight), #216ead);
 }
 
+::selection {
+  background-color: var(--color-highlight);
+  color: #fff;
+}
+
 html {
   font-family: Montserrat, sans-serif;
 }

@@ -1,3 +1,54 @@
+- title: Polished+
+  metaDesc: Case study of the Polished+ Redo Project designed and developed by Adam Robillard.
+  csLink: polished
+  layout: case-study
+  previewImg: /polished/laptop-polished-home.png
+  previewSide: right
+  prevUnitAlign: unit-pull-m-1-2
+  headerImg: /polished/laptop-polished-home.png
+  shortDesc: Polished+ is a brand building tool for sports teams that helps non-designers easily create dynamic brands. This project evaluated and redesigned my initial concept to improve the design and functionality of the concept.
+  longDesc: Polished+ is a brand building tool for sports teams that helps non-designers easily create dynamic brands. This project recreated a project from my first year of Graphic Design education. It focused on updating the overall design of the website as well as create effecient, reusable code.
+  projectLink: https://arobillard.github.io/polished-plus/
+  projectLinkText: View full website
+  category:
+    - Web Design
+    - Web Development
+    - Motion Graphics
+  client: Algonquin College
+  clientLink: https://algonquindesign.ca
+  role:
+    - Designer
+    - Motion Designer
+    - Web Developer
+  year: 2018
+  nextPrevBG: bg-lg
+  prevTitleCS: AMCES Rebrand
+  prevLinkCS: amces/
+  nextTitleCS: Quidditch Canada
+  nextLinkCS: quidditch-canada/
+- title: Quidditch Canada
+  metaDesc: Case study of the TopTable pattern library designed and developed by Adam Robillard.
+  csLink: quidditch-canada
+  layout: case-study
+  previewImg: quidcan/quidcan-preview.png
+  previewSide: left qc-prev
+  headerImg: quidcan/qc-intro-banner.jpg
+  shortDesc: Quidditch Canada is the national governing body for the sport of quidditch in Canada. Since 2014, I have designed Team Canada's jersey for the Quidditch World Cup every two years.
+  longDesc: Since 2014, every second year I have worked with Quidditch Canada to create their National Team jersey for the Quidditch World Cup. With each new iteration of the jersey, I have challenged myself to develop new ways to represent Canada's identity and help the team stand out both on the pitch and off.
+  projectLink:
+  projectLinkText:
+  category:
+    - Jersey Design
+    - Sports Design
+  client: Quidditch Canada
+  clientLink: http://quidditchcanada.com/
+  role:
+    - Designer
+  year: 2018
+  prevTitleCS: Polished+
+  prevLinkCS: polished/
+  nextTitleCS: TopTable
+  nextLinkCS: toptable/
 - title: TopTable
   metaDesc: Case study of the TopTable pattern library designed and developed by Adam Robillard.
   csLink: toptable
@@ -19,32 +70,8 @@
     - Designer
     - Web Developer
   year: 2018
-  prevTitleCS: AMCES Rebrand
-  prevLinkCS: amces/
-  nextTitleCS: Quidditch Canada
-  nextLinkCS: quidditch-canada/
-- title: Quidditch Canada
-  metaDesc: Case study of the TopTable pattern library designed and developed by Adam Robillard.
-  csLink: quidditch-canada
-  layout: case-study
-  previewImg: quidcan/quidcan-preview.png
-  previewSide: left qc-prev
-  prevUnitAlign:
-  headerImg: quidcan/qc-intro-banner.jpg
-  shortDesc: Quidditch Canada is the national governing body for the sport of quidditch in Canada. Since 2014, I have designed Team Canada's jersey for the Quidditch World Cup every two years.
-  longDesc: Since 2014, every second year I have worked with Quidditch Canada to create their National Team jersey for the Quidditch World Cup. With each new iteration of the jersey, I have challenged myself to develop new ways to represent Canada's identity and help the team stand out both on the pitch and off.
-  projectLink:
-  projectLinkText:
-  category:
-    - Jersey Design
-    - Sports Design
-  client: Quidditch Canada
-  clientLink: http://quidditchcanada.com/
-  role:
-    - Designer
-  year: 2018
-  prevTitleCS: TopTable
-  prevLinkCS: toptable/
+  prevTitleCS: Quidditch Canada
+  prevLinkCS: quidditch-canada/
   nextTitleCS: AMCES Rebrand
   nextLinkCS: amces/
 - title: AMCES Rebrand
@@ -52,21 +79,22 @@
   csLink: amces
   layout: case-study
   previewImg: amces/booth.png
-  previewSide: right
-  prevUnitAlign: unit-pull-m-1-2
+  previewSide: left amces-prev
+  prevUnitAlign:
   headerImg: amces/booth-16by9.png
   shortDesc: AMCES is an Association Management company that works with not-for-profit associations. I created their new brand to better reflect the company's professional, forward thinking business practices.
   longDesc: AMCES is an association management firm based in Ottawa, ON that works with national and international not-for-profits to help run their organizations and events. The goal for the rebrand was to modernize their brand to better reflect their professionalism and forward thinking business practices.
   projectLink:
   projectLinkText:
   category:
+    - Logo Design
     - Branding
   client: AMCES
   clientLink: https://www.amces.com
   role:
     - Designer
   year: 2018
-  prevTitleCS: Quidditch Canada
-  prevLinkCS: quidditch-canada/
-  nextTitleCS: TopTable
-  nextLinkCS: toptable/
+  prevTitleCS: TopTable
+  prevLinkCS: toptable/
+  nextTitleCS: Polished+
+  nextLinkCS: polished/

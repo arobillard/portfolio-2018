@@ -1,3 +1,6 @@
+---
+---
+
 $('.nav-main a').attr('tabindex', '-1');
 $('.nav-footer-wrap').addClass('hidden');
 $('.tog-nav-holder').addClass('nav-at-top');
@@ -62,22 +65,15 @@ $('.link-home').focusout(function () {
   $('#home-link-img').siblings().removeClass('link-no-hover');
 });
 
-// var cs1IsHovered = $('.link-cs1').hover();
-// var cs1IsFocused = $('.link-cs1').focus();
-//
-// if (!cs1IsFocused) {
+{% for navHovers in site.data.case-studies %}
 
-  $('.link-cs1').hover(
+  $('.link-{{navHovers.csLink}}').hover(
     function() {
-      $('#cs1-link-img').addClass('link-hovered');
+      $('#{{navHovers.csLink}}-link-img').addClass('link-hovered');
     }, function() {
-      $('#cs1-link-img').removeClass('link-hovered');
+      $('#{{navHovers.csLink}}-link-img').removeClass('link-hovered');
     }
   );
-
-// };
-//
-// if (!cs1IsHovered) {
 
   $('.link-cs1').focus(function () {
     $('#cs1-link-img').addClass('link-hovered');
@@ -89,43 +85,80 @@ $('.link-home').focusout(function () {
     $('#cs1-link-img').siblings().removeClass('link-no-hover');
   });
 
-// };
+{% endfor %}
 
-$('.link-cs2').hover(
-  function() {
-    $('#cs2-link-img').addClass('link-hovered');
-  }, function() {
-    $('#cs2-link-img').removeClass('link-hovered');
-  }
-);
+//
+// $('.link-polished').hover(
+//   function() {
+//     $('#polished-link-img').addClass('link-hovered');
+//   }, function() {
+//     $('#polished-link-img').removeClass('link-hovered');
+//   }
+// );
+//
+// $('.link-polished').focus(function () {
+//   $('#polished-link-img').addClass('link-hovered');
+//   $('#polished-link-img').siblings().addClass('link-no-hover');
+// });
+//
+// $('.link-toptable').focusout(function () {
+//   $('#polished-link-img').removeClass('link-hovered');
+//   $('#polished-link-img').siblings().removeClass('link-no-hover');
+// });
 
-$('.link-cs2').focus(function () {
-  $('#cs2-link-img').addClass('link-hovered');
-  $('#cs2-link-img').siblings().addClass('link-no-hover');
-});
-
-$('.link-cs2').focusout(function () {
-  $('#cs2-link-img').removeClass('link-hovered');
-  $('#cs2-link-img').siblings().removeClass('link-no-hover');
-});
-
-$('.link-cs3').hover(
-  function() {
-    $('#cs3-link-img').addClass('link-hovered');
-  }, function() {
-    $('#cs3-link-img').removeClass('link-hovered');
-  }
-);
-
-$('.link-cs3').focus(function () {
-  $('#cs3-link-img').addClass('link-hovered');
-  $('#cs3-link-img').siblings().addClass('link-no-hover');
-});
-
-$('.link-cs3').focusout(function () {
-  $('#cs3-link-img').removeClass('link-hovered');
-  $('#cs3-link-img').siblings().removeClass('link-no-hover');
-});
+// $('.link-toptable').hover(
+//   function() {
+//     $('#toptable-link-img').addClass('link-hovered');
+//   }, function() {
+//     $('#toptable-link-img').removeClass('link-hovered');
+//   }
+// );
+//
+// $('.link-toptable').focus(function () {
+//   $('#toptable-link-img').addClass('link-hovered');
+//   $('#toptable-link-img').siblings().addClass('link-no-hover');
+// });
+//
+// $('.link-toptable').focusout(function () {
+//   $('#toptable-link-img').removeClass('link-hovered');
+//   $('#toptable-link-img').siblings().removeClass('link-no-hover');
+// });
+//
+// $('.link-quidditch-canada').hover(
+//   function() {
+//     $('#quidditch-canada-link-img').addClass('link-hovered');
+//   }, function() {
+//     $('#quidditch-canada-link-img').removeClass('link-hovered');
+//   }
+// );
+//
+// $('.link-quidditch-canada').focus(function () {
+//   $('#quidditch-canada-link-img').addClass('link-hovered');
+//   $('#quidditch-canada-link-img').siblings().addClass('link-no-hover');
+// });
+//
+// $('.link-quidditch-canada').focusout(function () {
+//   $('#quidditch-canada-link-img').removeClass('link-hovered');
+//   $('#quidditch-canada-link-img').siblings().removeClass('link-no-hover');
+// });
+//
+// $('.link-amces').hover(
+//   function() {
+//     $('#amces-link-img').addClass('link-hovered');
+//   }, function() {
+//     $('#amces-link-img').removeClass('link-hovered');
+//   }
+// );
+//
+// $('.link-amces').focus(function () {
+//   $('#amces-link-img').addClass('link-hovered');
+//   $('#amces-link-img').siblings().addClass('link-no-hover');
+// });
+//
+// $('.link-amces').focusout(function () {
+//   $('#amces-link-img').removeClass('link-hovered');
+//   $('#amces-link-img').siblings().removeClass('link-no-hover');
+// });
 
 $('.link-me').hover(
   function() {

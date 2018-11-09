@@ -11,7 +11,8 @@ description: Portfolio website for Ottawa based graphic designer Adam Robillard.
     </h1>
     <p class="giga text-right animate-in animate-in-delay">Graphic Designer</p>
   </div>
-  <a class="scroll-hint gutter smooth-scroll" href="#section-1">
+  {% assign prevScroll=site.data.case-studies[0] %}
+  <a class="scroll-hint gutter smooth-scroll" href="#{{prevScroll.csLink}}">
     <span class="scroll-hint-line"></span>
     <span class="scroll-hint-scroller"></span>
   </a>

@@ -9,9 +9,9 @@
   <div class="slide-nav flex-v-middle">
     <div class="nav-bg-photos">
       <img id="home-link-img" class="box-shadow" src="{{site.baseurl}}/images/home-hover.jpg" alt="">
-      <img id="cs1-link-img" src="{{site.baseurl}}/images/laptop-example.png" alt="">
-      <img id="cs2-link-img" src="{{site.baseurl}}/images/quidcan/quidcan-preview.png" alt="">
-      <img id="cs3-link-img" src="{{site.baseurl}}/images/amces/booth.png" alt="">
+      {% for navImages in site.data.case-studies %}
+        <img id="{{navImages.csLink}}-link-img" src="{{site.baseurl}}/images/{{navImages.previewImg}}" alt="">
+      {% endfor %}
       <img id="me-link-img" src="{{site.baseurl}}/images/adamheadshot-bw.png" alt="">
     </div>
     <div class="wrapper gutter">
