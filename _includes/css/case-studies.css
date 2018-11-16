@@ -232,6 +232,14 @@
     margin-bottom: 3rem;
   }
 
+  .amces-prev {
+    height: 66vh;
+  }
+
+  .case-study-preview-img-in.main-preview-img-left .amces-prev {
+    right: 53%;
+  }
+
   .amces-sketch {
     height: 25vh;
   }
