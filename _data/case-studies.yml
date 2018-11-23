@@ -3,9 +3,11 @@
   csLink: polished
   layout: case-study
   previewImg: /polished/laptop-polished-home.png
+  previewImgAlt: A laptop showing the home page of Polished+.
   previewSide: right
   prevUnitAlign: unit-pull-m-1-2
   headerImg: /polished/laptop-polished-home.png
+  headerImgAlt: A laptop showing the home page of Polished+.
   shortDesc: Polished+ is a brand building tool for sports teams that helps non-designers easily create dynamic brands. This project evaluated and redesigned my initial concept to improve the design and functionality of the concept.
   longDesc: Polished+ is a brand building tool for sports teams that helps non-designers easily create dynamic brands. This project recreated a project from my first year of Graphic Design education. It focused on updating the overall design of the website as well as create effecient, reusable code.
   projectLink: https://arobillard.github.io/polished-plus/
@@ -31,8 +33,10 @@
   csLink: quidditch-canada
   layout: case-study
   previewImg: quidcan/quidcan-preview.png
+  previewImgAlt: A mock up of the 2018 Team Canada dark jersey.
   previewSide: left qc-prev
   headerImg: quidcan/qc-intro-banner.jpg
+  headerImgAlt: Photo of Quidditch Canada player in light jersey from the back.
   shortDesc: Quidditch Canada is the national governing body for the sport of quidditch in Canada. Since 2014, I have designed Team Canada's jersey for the Quidditch World Cup every two years.
   longDesc: Since 2014, every second year I have worked with Quidditch Canada to create their National Team jersey for the Quidditch World Cup. With each new iteration of the jersey, I have challenged myself to develop new ways to represent Canada's identity and help the team stand out both on the pitch and off.
   projectLink:
@@ -54,9 +58,11 @@
   csLink: toptable
   layout: case-study
   previewImg: laptop-example.png
+  previewImgAlt: A laptop showing the home page of TopTable.
   previewSide: right
   prevUnitAlign: unit-pull-m-1-2
   headerImg: laptop-example.png
+  headerImgAlt: A laptop showing the home page of TopTable.
   shortDesc: TopTable is an e-commerce website developed with an in-depth pattern library system. It was design to be easy-to-use, with a product-first design mentality.
   longDesc: TopTable is an e-commerce pattern library for a table top game store. The pattern library developed a collection of reusable elements to more efficiently build the website. The design goal for the website was to create an e-commerce platform with a focus on ease-of-use and with a product-first design mentality.
   projectLink: https://arobillard.github.io/ecommerce-pattern-library/
@@ -79,9 +85,11 @@
   csLink: amces
   layout: case-study
   previewImg: amces/booth.png
+  previewImgAlt: A conference booth with the AMCES branding.
   previewSide: left amces-prev
   prevUnitAlign:
   headerImg: amces/booth-16by9.png
+  headerImgAlt: A conference booth with the AMCES branding.
   shortDesc: AMCES is an Association Management company that works with not-for-profit associations. I created their new brand to better reflect the company's professional, forward thinking business practices.
   longDesc: AMCES is an association management firm based in Ottawa, ON that works with national and international not-for-profits to help run their organizations and events. The goal for the rebrand was to modernize their brand to better reflect their professionalism and forward thinking business practices.
   projectLink:

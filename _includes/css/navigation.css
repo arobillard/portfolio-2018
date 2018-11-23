@@ -1,6 +1,7 @@
 .slide-nav {
   width: 100vw;
   height: 100vh;
+  background-color: #333;
   background-color: var(--color-dark-grey);
   transition: left .75s cubic-bezier(1, 0, 0, 1);
   position: fixed;
