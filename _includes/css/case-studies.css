@@ -1,7 +1,3 @@
-.home .wordmark {
-  display: none;
-}
-
 .wordmark {
   position: fixed;
   top: 0;
@@ -36,7 +32,7 @@
   color: #fff;
 }
 
-.case-study section:nth-child(odd) {
+.case-study section:nth-child(even) {
   background-color: var(--color-light-grey);
 }
 
@@ -242,6 +238,18 @@
     right: 50%;
   }
 
+  .main-preview-img-left.qn-logo {
+    height: 24vh;
+  }
+
+}
+
+@media only screen and (min-width: 45em) {
+
+  .main-preview-img-left.qn-logo {
+    height: 30vh;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -328,6 +336,16 @@
     max-height: 200px;
   }
 
+  .main-preview-img-left.qn-logo {
+    height: 40vh;
+  }
+
 }
+
+@media only screen and (min-width: 90em) {
+
+  .case-study-preview-img-in.main-preview-img-left.qn-logo {
+    right: 55%;
+  }
 
 }

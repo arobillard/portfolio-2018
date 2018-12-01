@@ -31,7 +31,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,400i,700,700i|Montserrat:400,400i,700,700i" rel="stylesheet">
   <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico"/>
 </head>
-<body class="{{page.pageClass}}">
+<body id="top" class="{{page.pageClass}}">
   <ul class="skip-links">
     <li><a href="#main">Jump to main content</a></li>
     <li><a class="skip-to-nav" href="#nav">Jump to navigation</a></li>
@@ -39,10 +39,6 @@
   {% include nav-slider.html %}
   <div class="nav-shifter">
     <main id="main" role="main">
-      <div class="wordmark island text-right">
-        <a class="inline-block m-hidden exa font-alt text-shadow push-0 pad-t-1-4" href="{{site.baseurl}}/">A<span class="bold">R</span></a>
-        <a class="inline-block xs-s-hidden tera font-alt text-shadow push-0 pad-t-1-4" href="{{site.baseurl}}/">Adam <span class="bold">Robillard</span></a>
-      </div>
       {{content}}
     </main>
     <footer class="footer pad-t-2 pad-b-2 bg-dg text-center" role="contentinfo">
@@ -53,7 +49,7 @@
         <div class="unit [ xs-1 m-1-2 ] unit-push-m-1-2">
           <ul class="icon-list list-group-inline">
             <li class="push-r">
-              <a class="inline-block" href="mailto:robi0653@algonquinlive.com">
+              <a class="inline-block" href="mailto:robi0653@algonquinlive.com" aria-label="Email Adam at hello@adamrobillard.ca">
                 <i class="icon i-3-4">
                   <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#email" /></svg>
                 </i>
@@ -61,7 +57,7 @@
               </a>
             </li>
             <li class="push-r">
-              <a class="inline-block" href="https://github.com/arobillard" target="_blank">
+              <a class="inline-block" href="https://github.com/arobillard" aria-label="Visit Adam's Github account.">
                 <i class="icon i-3-4">
                   <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#github" /></svg>
                 </i>
@@ -69,7 +65,7 @@
               </a>
             </li>
             <li class="push-r">
-              <a class="inline-block" href="https://www.instagram.com/awillrobillard/">
+              <a class="inline-block" href="https://www.instagram.com/awillrobillard/"  aria-label="Visit Adam's Instagram account.">
                 <i class="icon i-3-4">
                   <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#instagram" /></svg>
                 </i>
@@ -77,7 +73,7 @@
               </a>
             </li>
             <li class="push-r">
-              <a class="inline-block" href="https://www.linkedin.com/in/adam-robillard/">
+              <a class="inline-block" href="https://www.linkedin.com/in/adam-robillard/"  aria-label="Visit Adam's LinkedIn account.">
                 <i class="icon i-3-4">
                   <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#linkedin" /></svg>
                 </i>
@@ -85,7 +81,7 @@
               </a>
             </li>
             <li class="push-r">
-              <a class="inline-block" href="https://vimeo.com/user71391239">
+              <a class="inline-block" href="https://vimeo.com/user71391239"  aria-label="Visit Adam's Vimeo account.">
                 <i class="icon i-3-4">
                   <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#vimeo" /></svg>
                 </i>
@@ -93,7 +89,7 @@
               </a>
             </li>
             <li>
-              <a class="inline-block" href="{{site.baseurl}}/images/robillard-adam-resume.pdf" target="_blank">
+              <a class="inline-block" href="{{site.baseurl}}/images/robillard-adam-resume.pdf" aria-label="View Adam's resumé.">
                 <i class="icon i-3-4">
                   <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#cv" /></svg>
                 </i>
@@ -106,9 +102,57 @@
           <small class="text-ccc font-alt">© Adam Robillard 2018</small>
         </div>
       </div>
+      <a class="to-top island-1-4 smooth-scroll" href="#top" aria-label="Return to top.">To top</a>
     </footer>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="{{site.baseurl}}/js/main.js"></script>
+
+    <script type="application/jd+json">
+      {
+        "@context": "https://schema.org",
+        "@id": "#adamrobillard",
+        "@type": "Person",
+        "name": "Adam William Robillard",
+        "jobTitle": "Graphic Designer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ottawa",
+          "addressRegion": "ON",
+          "addressCountry": "CA",
+          "postalCode": "K2A 1Z3"
+        },
+        "email": "hello@adamrobillard.ca",
+        "tel": "+16133144551",
+        "website": "http://adamrobillard.ca/"
+        "sameAs": [
+          "https://www.facebook.com/arobillard",
+          "https://www.instagram.com/awillrobillard/",
+          "https://www.linkedin.com/in/adam-robillard/",
+          "https://vimeo.com/user71391239",
+          "https://github.com/arobillard",
+        ]
+      }
+    </script>
+  {% unless page.url == '/' %}
+    {% assign csData=site.data.case-studies[page.csNumber] %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "{{csData.title}}",
+        "author": {
+          "@type": "Person",
+          "@id": "#adamrobillard"
+        },
+        "image": "https://adamrobillard.ca/images/{{csData.headerImg}}",
+        "url": "https://adamrobillard.ca/{{csData.csLink}}",
+        "dateCreated": "{{csData.year}}",
+        "description": "{{csData.metaDesc}}",
+        "keywords": "{{csData.tags}}"
+      }
+    </script>
+  {% endunless %}
+
 </body>
 </html>

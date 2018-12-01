@@ -1,5 +1,5 @@
 <header role="banner">
-  <a class="tog-nav-holder" href="#nav-footer">
+  <a class="tog-nav-holder" href="#nav-footer" aria-label="Press to open navigation.">
     <div class="tog-nav">
       <span class="tog tog-top"></span>
       <span class="tog tog-middle"></span>
@@ -18,4 +18,10 @@
       {% include nav.html navid="nav" navclass='nav-main bold text-shadow font-alt' ulclass='list-group push-0 tera' liclass='pad-t-1-2 pad-b-1-2' aclass='text-ccc'%}
     </div>
   </div>
+  {% unless page.url == '/' %}
+    <div class="wordmark island text-right">
+      <a class="inline-block m-hidden exa font-alt text-shadow push-0 pad-t-1-4" href="{{site.baseurl}}/" aria-label="Return to home page.">A<span class="bold">R</span></a>
+      <a class="inline-block xs-s-hidden tera font-alt text-shadow push-0 pad-t-1-4" href="{{site.baseurl}}/" aria-label="Return to home page.">Adam <span class="bold">Robillard</span></a>
+    </div>
+  {% endunless %}
 </header>

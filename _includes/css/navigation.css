@@ -254,4 +254,9 @@
     left: 1.5rem;
   }
 
+  .nav-bg-photos img#quebec-nordiques-link-img {
+    height: 160vh;
+    top: 80%;
+  }
+
 }

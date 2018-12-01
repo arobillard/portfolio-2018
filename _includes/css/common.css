@@ -162,6 +162,20 @@ p > a:focus {
   text-shadow: var(--shadow-primary);
 }
 
+.to-top {
+  display: inline-block;
+  background-color: var(--color-highlight);
+  color: #fff;
+  position: fixed;
+  bottom: -3rem;
+  right: 1.5rem;
+}
+
+.to-top:focus {
+  bottom: 0;
+  color: #fff;
+}
+
 @media only screen and (min-width: 25em) {
 
   .intro-home h1 {

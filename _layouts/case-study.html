@@ -8,7 +8,7 @@ layout: default
       <p class="max-length text-center-m gutter push-2">{{csHeader.longDesc}}</p>
       {% if csHeader.projectLink %}
       <div class="font-alt bold mega text-center pad-t pad-b">
-        <a href="{{csHeader.projectLink}}" target="_blank">
+        <a class="inline-block" href="{{csHeader.projectLink}}" target="_blank" aria-label="Visit full {{csHeader.title}} website.">
           <span class="valign-middle inline-block">{{csHeader.projectLinkText}}</span>
           <i class="icon i-1 ">
             <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
@@ -16,21 +16,29 @@ layout: default
         </a>
       </div>
       {% endif %}
-      {% if csHeader.projectLink %}
-        <a class="block" href="{{csHeader.projectLink}}" target="_blank">
-      {% endif %}
-        <div class="island">
-          <div class="embed embed-16by9">
-            <img class="embed-item" src="{{site.baseurl}}/images/{{csHeader.headerImg}}" alt="{{csHeader.headerImgAlt}}">
-          </div>
+      {% if csHeader.headerVideoSwitch == true %}
+      <div class="island">
+        <div class="embed embed-16by9">
+          {{csHeader.headerVideo}}
         </div>
-      {% if csHeader.projectLink %}
-        </a>
+      </div>
+      {% else %}
+        {% if csHeader.projectLink %}
+          <a class="block" href="{{csHeader.projectLink}}" target="_blank" aria-label="Visit full {{csHeader.title}} website.">
+        {% endif %}
+          <div class="island">
+            <div class="embed embed-16by9">
+              <img class="embed-item" src="{{site.baseurl}}/images/{{csHeader.headerImg}}" alt="{{csHeader.headerImgAlt}}">
+            </div>
+          </div>
+        {% if csHeader.projectLink %}
+          </a>
+        {% endif %}
       {% endif %}
       <div class="grid island-1-2">
         <div class="unit [ xs-1-2 m-1-4 ] island-1-2">
           <p class="font-alt bold push-1-2">Categories</p>
-          <ol class="list-group-inline milli push-0">
+          <ol class="list-group milli push-0">
             {% for cat in csHeader.category %}
               <li class="push-r-1-2">{{cat}}</li>
             {% endfor %}
@@ -38,10 +46,10 @@ layout: default
         </div>
         <div class="unit [ xs-1-2 m-1-4 ] island-1-2">
           <p class="font-alt bold push-1-2">Client</p>
-          <ol class="list-group-inline milli push-0">
+          <ol class="list-group milli push-0">
             <li class="push-r-1-2">
               {% if csHeader.clientLink %}
-                <a class="" href="{{csHeader.clientLink}}" target="_blank">
+                <a class="" href="{{csHeader.clientLink}}" target="_blank" aria-label="Visit the {{csHeader.client}} website.">
               {% endif %}
               {{csHeader.client}}
               {% if csHeader.clientLink %}
@@ -60,7 +68,7 @@ layout: default
         </div>
         <div class="unit [ xs-1-2 m-1-4 ] island-1-2">
           <p class="font-alt bold push-1-2">Year</p>
-          <ol class="list-group-inline milli push-0">
+          <ol class="list-group milli push-0">
             <li class="push-r-1-2">{{csHeader.year}}</li>
           </ol>
         </div>
@@ -73,7 +81,7 @@ layout: default
 <footer class="pad-t-2 pad-b-2 {{csHeader.nextPrevBG}}">
   <ul class="grid wrapper gutter list-group prev-next-indicator push-0">
     <li class="unit [ xs-1-2 ]">
-      <a href="{{site.baseurl}}/{{csHeader.prevLinkCS}}">
+      <a class="inline-block" href="{{site.baseurl}}/{{csHeader.prevLinkCS}}" aria-label="View {{csHeader.prevTitleCS}} case study.">
         <i class="icon i-3-4 valign-top">
           <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#left-indicator" /></svg>
         </i>
@@ -84,7 +92,7 @@ layout: default
       </a>
     </li>
     <li class="unit [ xs-1-2 ] text-right">
-      <a href="{{site.baseurl}}/{{csHeader.nextLinkCS}}">
+      <a class="inline-block" href="{{site.baseurl}}/{{csHeader.nextLinkCS}}" aria-label="View {{csHeader.nextTitleCS}} case study.">
         <div class="inline-block valign-top">
           <span class="valign-middle inline-block bold">Next</span>
           <p class="milli push-0 xs-hidden">{{csHeader.nextTitleCS}}</p>

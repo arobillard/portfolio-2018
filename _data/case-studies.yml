@@ -6,7 +6,7 @@
   previewImgAlt: A laptop showing the home page of Polished+.
   previewSide: right
   prevUnitAlign: unit-pull-m-1-2
-  headerImg: /polished/laptop-polished-home.png
+  headerImg: polished/laptop-polished-home.png
   headerImgAlt: A laptop showing the home page of Polished+.
   shortDesc: Polished+ is a brand building tool for sports teams that helps non-designers easily create dynamic brands. This project evaluated and redesigned my initial concept to improve the design and functionality of the concept.
   longDesc: Polished+ is a brand building tool for sports teams that helps non-designers easily create dynamic brands. This project recreated a project from my first year of Graphic Design education. It focused on updating the overall design of the website as well as create effecient, reusable code.
@@ -26,26 +26,31 @@
   nextPrevBG: bg-lg
   prevTitleCS: AMCES Rebrand
   prevLinkCS: amces/
-  nextTitleCS: Quidditch Canada
-  nextLinkCS: quidditch-canada/
-- title: Quidditch Canada
-  metaDesc: Case study of the TopTable pattern library designed and developed by Adam Robillard.
-  csLink: quidditch-canada
+  nextTitleCS: Québec Nordiques
+  nextLinkCS: quebec-nordiques/
+  tags: Web Design, Sports Design, HTML, CSS, Jekyll, Liquid, jQuery
+- title: Québec Nordiques
+  metaDesc: Case study of the development of the Québec Nordiques rebrand designed by Adam Robillard.
+  csLink: quebec-nordiques
   layout: case-study
-  previewImg: quidcan/quidcan-preview.png
-  previewImgAlt: A mock up of the 2018 Team Canada dark jersey.
-  previewSide: left qc-prev
-  headerImg: quidcan/qc-intro-banner.jpg
-  headerImgAlt: Photo of Quidditch Canada player in light jersey from the back.
-  shortDesc: Quidditch Canada is the national governing body for the sport of quidditch in Canada. Since 2014, I have designed Team Canada's jersey for the Quidditch World Cup every two years.
-  longDesc: Since 2014, every second year I have worked with Quidditch Canada to create their National Team jersey for the Quidditch World Cup. With each new iteration of the jersey, I have challenged myself to develop new ways to represent Canada's identity and help the team stand out both on the pitch and off.
+  previewImg: quebec-nordiques/quebec-nordiques-preview.png
+  previewImgAlt: A mock up of the new Québec Nordiques jersey design.
+  previewSide: left qnords-prev
+  headerVideoSwitch: true
+  headerVideo: >-
+    <iframe class="embed-item" src="https://player.vimeo.com/video/302712275?autoplay=1&color=2c8Bd9&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  headerImg: quebec-nordiques/ice-graphic.jpg
+  headerImgAlt: The Québec Nordiques logo at centre ice of a hockey arena.
+  shortDesc: A reimagining of the Québec Nordiques brand, updated to fit in the 2018 NHL design climate. It expands on the nordic symbolism while still remaining connected to its Francophone roots.
+  longDesc: The goal of the Quebec Nordiques rebrand was to modernize the brand and have it stand out as a competitive brand in the modern age National Hockey League (NHL). The Quebec Nordiques team was relocateed to Colorado in the mid-1990s therefore their brand design reflects the 90s design style. The rebrand modernizes the team’s look while still feeling connected with the original brand.
   projectLink:
   projectLinkText:
   category:
     - Jersey Design
     - Sports Design
-  client: Quidditch Canada
-  clientLink: http://quidditchcanada.com/
+    - Motion
+  client: Algonquin College
+  clientLink: http://algonquindesign.ca
   role:
     - Designer
   year: 2018
@@ -53,6 +58,33 @@
   prevLinkCS: polished/
   nextTitleCS: TopTable
   nextLinkCS: toptable/
+  tags: Jersey Design, Sports Design, Hockey, NHL, Québec, Québec Nordiques, Sports
+# - title: Quidditch Canada
+#   metaDesc: Case study of the development of the Quidditch Canada jerseys over six years designed by Adam Robillard.
+#   csLink: quidditch-canada
+#   layout: case-study
+#   previewImg: quidcan/quidcan-preview.png
+#   previewImgAlt: A mock up of the 2018 Team Canada dark jersey.
+#   previewSide: left qc-prev
+#   headerImg: quidcan/qc-intro-banner.jpg
+#   headerImgAlt: Photo of Quidditch Canada player in light jersey from the back.
+#   shortDesc: Quidditch Canada is the national governing body for the sport of quidditch in Canada. Since 2014, I have designed Team Canada's jersey for the Quidditch World Cup every two years.
+#   longDesc: Since 2014, every second year I have worked with Quidditch Canada to create their National Team jersey for the Quidditch World Cup. With each new iteration of the jersey, I have challenged myself to develop new ways to represent Canada's identity and help the team stand out both on the pitch and off.
+#   projectLink:
+#   projectLinkText:
+#   category:
+#     - Jersey Design
+#     - Sports Design
+#   client: Quidditch Canada
+#   clientLink: http://quidditchcanada.com/
+#   role:
+#     - Designer
+#   year: 2018
+#   prevTitleCS: Polished+
+#   prevLinkCS: polished/
+#   nextTitleCS: TopTable
+#   nextLinkCS: toptable/
+#   tags: Jersey Design, Sports Design, Quidditch, Quidditch Canada, Sports
 - title: TopTable
   metaDesc: Case study of the TopTable pattern library designed and developed by Adam Robillard.
   csLink: toptable
@@ -76,12 +108,13 @@
     - Designer
     - Web Developer
   year: 2018
-  prevTitleCS: Quidditch Canada
-  prevLinkCS: quidditch-canada/
+  prevTitleCS: Québec Nordiques
+  prevLinkCS: quebec-nordiques/
   nextTitleCS: AMCES Rebrand
   nextLinkCS: amces/
+  tags: Pattern Library, HTML, CSS, jQuery, Board Games, RPGs
 - title: AMCES Rebrand
-  metaDesc: Case study of the TopTable pattern library designed and developed by Adam Robillard.
+  metaDesc: Case study of the AMCES rebrand designed and developed by Adam Robillard.
   csLink: amces
   layout: case-study
   previewImg: amces/booth.png
@@ -106,3 +139,4 @@
   prevLinkCS: toptable/
   nextTitleCS: Polished+
   nextLinkCS: polished/
+  tags: Branding, AMCES, Association Management, Logo Design

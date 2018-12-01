@@ -1,9 +1,9 @@
 <nav id="{{include.navid}}" class="{{include.navclass}}" role="navigation">
   <ul class="{{include.ulclass}}">
-    <li class="{{include.liclass}}"><a class="link-home {{include.aclass}} {% if page.url == '/' %}current{% endif %}" href="{{site.baseurl}}/">Home</a></li>
+    <li class="{{include.liclass}}"><a class="link-home {{include.aclass}} {% if page.url == '/' %}current{% endif %}" href="{{site.baseurl}}/" aria-label="Link to home page.">Home</a></li>
     {% for navLinks in site.data.case-studies %}
-      <li class="{{include.liclass}}"><a class="link-{{navLinks.csLink}} {{include.aclass}} {% if page.url contains navLinks.csLink %}current{% endif %}" href="{{site.baseurl}}/{{navLinks.csLink}}/">{{navLinks.title}}</a></li>
+      <li class="{{include.liclass}}"><a class="link-{{navLinks.csLink}} {{include.aclass}} {% if page.url contains navLinks.csLink %}current{% endif %}" href="{{site.baseurl}}/{{navLinks.csLink}}/" aria-label="Link to {{navLinks.title}} caseStudy.">{{navLinks.title}}</a></li>
     {% endfor %}
-    <li class="{{include.liclass}}"><a class="link-me {{include.aclass}}" href="{{site.baseurl}}/#me">Me</a></li>
+    <li class="{{include.liclass}}"><a class="link-me {{include.aclass}}" href="{{site.baseurl}}/#me" aria-label="Link to about me section.">Me</a></li>
   </ul>
 </nav>
