@@ -176,6 +176,27 @@ p > a:focus {
   color: #fff;
 }
 
+.mf-category-list li {
+  position: relative;
+}
+
+.mf-category-list li::after {
+  content: '|';
+  position: absolute;
+  top: 50%;
+  right: -1rem;
+  transform: translateY(-50%);
+}
+
+.mf-category-list li:last-child::after {
+  display: none;
+}
+
+.me p.no-font-adjust {
+  font-size: 100%;
+  line-height: 1.3;
+}
+
 @media only screen and (min-width: 25em) {
 
   .intro-home h1 {
@@ -184,6 +205,11 @@ p > a:focus {
 
   .xs-hidden {
     display: block;
+  }
+
+  .me p.no-font-adjust {
+    font-size: 100%;
+    line-height: 1.3;
   }
 
 }
@@ -241,6 +267,15 @@ p > a:focus {
     text-align: right;
   }
 
+  .me p.no-font-adjust {
+    font-size: 100%;
+    line-height: 1.3;
+  }
+
+  .mf-library-link {
+    text-align: right;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -256,6 +291,11 @@ p > a:focus {
 
   .footer .nav-foot li {
     margin-right: .75rem
+  }
+
+  .me p.no-font-adjust {
+    font-size: 100%;
+    line-height: 1.3;
   }
 
 }

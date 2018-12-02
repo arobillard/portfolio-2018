@@ -24,8 +24,8 @@
     - Web Developer
   year: 2018
   nextPrevBG: bg-lg
-  prevTitleCS: AMCES Rebrand
-  prevLinkCS: amces/
+  prevTitleCS: More Fun
+  prevLinkCS: more-fun/
   nextTitleCS: Québec Nordiques
   nextLinkCS: quebec-nordiques/
   tags: Web Design, Sports Design, HTML, CSS, Jekyll, Liquid, jQuery
@@ -56,8 +56,8 @@
   year: 2018
   prevTitleCS: Polished+
   prevLinkCS: polished/
-  nextTitleCS: TopTable
-  nextLinkCS: toptable/
+  nextTitleCS: The Hub & Rebound
+  nextLinkCS: the-hub/
   tags: Jersey Design, Sports Design, Hockey, NHL, Québec, Québec Nordiques, Sports
 # - title: Quidditch Canada
 #   metaDesc: Case study of the development of the Quidditch Canada jerseys over six years designed by Adam Robillard.
@@ -85,26 +85,28 @@
 #   nextTitleCS: TopTable
 #   nextLinkCS: toptable/
 #   tags: Jersey Design, Sports Design, Quidditch, Quidditch Canada, Sports
-- title: TopTable
-  metaDesc: Case study of the TopTable pattern library designed and developed by Adam Robillard.
-  csLink: toptable
+- title: The Hub & Rebound
+  metaDesc: Case study of The Hub & Rebound's rebrand and website design lead and developed by Adam Robillard.
+  csLink: the-hub
   layout: case-study
-  previewImg: laptop-example.png
-  previewImgAlt: A laptop showing the home page of TopTable.
+  previewImg: the-hub/laptop-hub.png
+  previewImgAlt: A laptop showing the home page of The Hub.
   previewSide: right
   prevUnitAlign: unit-pull-m-1-2
-  headerImg: laptop-example.png
-  headerImgAlt: A laptop showing the home page of TopTable.
-  shortDesc: TopTable is an e-commerce website developed with an in-depth pattern library system. It was design to be easy-to-use, with a product-first design mentality.
-  longDesc: TopTable is an e-commerce pattern library for a table top game store. The pattern library developed a collection of reusable elements to more efficiently build the website. The design goal for the website was to create an e-commerce platform with a focus on ease-of-use and with a product-first design mentality.
-  projectLink: https://arobillard.github.io/ecommerce-pattern-library/
-  projectLinkText: View pattern library
+  headerImg: the-hub/laptop-hub.png
+  headerImgAlt: A laptop showing the home page of The Hub.
+  shortDesc: The Hub & Rebound are a charitable organization in Almonte, Ontario. As project lead, I lead a team of students to develop The Hub & Rebound's new brand and website.
+  longDesc: The Hub & Rebound are a charitable organization in Almonte, Ontario. In my role as the project lead, I oversaw the development of the new logos and brand, providing critiques and guidance. I also fully designed and developed the new website using <a href="https://jekyllrb.com/" target="_blank" aria-label="Learn more about building website with Jekyll">Jekyll</a> and <a href="https://www.netlifycms.org/" target="_blank" aria-label="Learn more about building website with Netlify">Netlify</a>.
+  projectLink: https://arobillard.github.io/the-hub-almonte/
+  projectLinkText: View full website
   category:
+    - Branding
     - Web Design
     - Web Development
-  client: Algonquin College
-  clientLink: https://algonquindesign.ca
+  client: The Hub & Rebound
+  clientLink: https://thehubalmonte.com
   role:
+    - Team Lead
     - Designer
     - Web Developer
   year: 2018
@@ -112,7 +114,35 @@
   prevLinkCS: quebec-nordiques/
   nextTitleCS: AMCES Rebrand
   nextLinkCS: amces/
-  tags: Pattern Library, HTML, CSS, jQuery, Board Games, RPGs
+  tags: Web Design, HTML, CSS, jQuery, Jekyll, Netlify, Branding, Logo Design
+# - title: TopTable
+#   metaDesc: Case study of the TopTable pattern library designed and developed by Adam Robillard.
+#   csLink: toptable
+#   layout: case-study
+#   previewImg: laptop-example.png
+#   previewImgAlt: A laptop showing the home page of TopTable.
+#   previewSide: right
+#   prevUnitAlign: unit-pull-m-1-2
+#   headerImg: laptop-example.png
+#   headerImgAlt: A laptop showing the home page of TopTable.
+#   shortDesc: TopTable is an e-commerce website developed with an in-depth pattern library system. It was design to be easy-to-use, with a product-first design mentality.
+#   longDesc: TopTable is an e-commerce pattern library for a table top game store. The pattern library developed a collection of reusable elements to more efficiently build the website. The design goal for the website was to create an e-commerce platform with a focus on ease-of-use and with a product-first design mentality.
+#   projectLink: https://arobillard.github.io/ecommerce-pattern-library/
+#   projectLinkText: View pattern library
+#   category:
+#     - Web Design
+#     - Web Development
+#   client: Algonquin College
+#   clientLink: https://algonquindesign.ca
+#   role:
+#     - Designer
+#     - Web Developer
+#   year: 2018
+#   prevTitleCS: Québec Nordiques
+#   prevLinkCS: quebec-nordiques/
+#   nextTitleCS: AMCES Rebrand
+#   nextLinkCS: amces/
+#   tags: Pattern Library, HTML, CSS, jQuery, Board Games, RPGs
 - title: AMCES Rebrand
   metaDesc: Case study of the AMCES rebrand designed and developed by Adam Robillard.
   csLink: amces
@@ -135,8 +165,28 @@
   role:
     - Designer
   year: 2018
-  prevTitleCS: TopTable
-  prevLinkCS: toptable/
+  prevTitleCS: The Hub & Rebound
+  prevLinkCS: the-hub/
+  nextTitleCS: More Fun
+  nextLinkCS: more-fun/
+  tags: Branding, AMCES, Association Management, Logo Design
+- title: More Fun
+  metaDesc: A collection of designs and artwork designed and developed by Adam Robillard.
+  csLink: more-fun
+  layout: case-study
+  previewImg: quidcan/quidcan-preview.png
+  previewImgAlt: A mock up of the 2018 Team Canada dark jersey.
+  previewSide: right
+  prevUnitAlign: unit-pull-m-1-2
+  headerImg: more-fun/redblacks-collage.jpg
+  headerImgAlt: A collage featuring players of the Ottawa RedBlacks football team.
+  shortDesc: A collection of designs I have created that unfortunately did not quite fit into a case study, but I am still proud of. Enjoy!
+  longDesc: This page features a collection of designs I have created that I am proud of but unfortunately do not fit into a case study. The collection includes a range of pieces from jerseys, to motion pieces, to passion projects. Enjoy!
+  projectLink:
+  projectLinkText:
+  prevTitleCS: AMCES Rebrand
+  prevLinkCS: amces/
   nextTitleCS: Polished+
   nextLinkCS: polished/
-  tags: Branding, AMCES, Association Management, Logo Design
+  tags: Motion, Jerseys, Design, Graphic Design
+  removeInfo: true

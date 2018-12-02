@@ -16,6 +16,20 @@ layout: default
         </a>
       </div>
       {% endif %}
+      {% if csHeader.title == "More Fun" %}
+        <p class="text-center bold giga font-alt">Browse by category:</p>
+        <ol class="list-group-inline text-center mf-category-list">
+          <li class="push-r">
+            <a class="smooth-scroll" href="#jerseys">Jerseys</a>
+          </li>
+          <li class="push-r">
+            <a class="smooth-scroll" href="#motion">Motion Graphics</a>
+          </li>
+          <li>
+            <a class="smooth-scroll" href="#web">Web Design</a>
+          </li>
+        </ol>
+      {% endif %}
       {% if csHeader.headerVideoSwitch == true %}
       <div class="island">
         <div class="embed embed-16by9">
@@ -35,44 +49,46 @@ layout: default
           </a>
         {% endif %}
       {% endif %}
-      <div class="grid island-1-2">
-        <div class="unit [ xs-1-2 m-1-4 ] island-1-2">
-          <p class="font-alt bold push-1-2">Categories</p>
-          <ol class="list-group milli push-0">
-            {% for cat in csHeader.category %}
-              <li class="push-r-1-2">{{cat}}</li>
-            {% endfor %}
-          </ol>
+      {% unless csHeader.removeInfo == true %}
+        <div class="grid island-1-2">
+          <div class="unit [ xs-1-2 m-1-4 ] island-1-2">
+            <p class="font-alt bold push-1-2">Categories</p>
+            <ol class="list-group milli push-0">
+              {% for cat in csHeader.category %}
+                <li class="push-r-1-2">{{cat}}</li>
+              {% endfor %}
+            </ol>
+          </div>
+          <div class="unit [ xs-1-2 m-1-4 ] island-1-2">
+            <p class="font-alt bold push-1-2">Client</p>
+            <ol class="list-group milli push-0">
+              <li class="push-r-1-2">
+                {% if csHeader.clientLink %}
+                  <a class="" href="{{csHeader.clientLink}}" target="_blank" aria-label="Visit the {{csHeader.client}} website.">
+                {% endif %}
+                {{csHeader.client}}
+                {% if csHeader.clientLink %}
+                  </a>
+                {% endif %}
+              </li>
+            </ol>
+          </div>
+          <div class="unit [ xs-1-2 m-1-4 ] island-1-2">
+            <p class="font-alt bold push-1-2">Role</p>
+            <ol class="list-group milli push-0">
+              {% for role in csHeader.role %}
+                <li class="push-r-1-2">{{role}}</li>
+              {% endfor %}
+            </ol>
+          </div>
+          <div class="unit [ xs-1-2 m-1-4 ] island-1-2">
+            <p class="font-alt bold push-1-2">Year</p>
+            <ol class="list-group milli push-0">
+              <li class="push-r-1-2">{{csHeader.year}}</li>
+            </ol>
+          </div>
         </div>
-        <div class="unit [ xs-1-2 m-1-4 ] island-1-2">
-          <p class="font-alt bold push-1-2">Client</p>
-          <ol class="list-group milli push-0">
-            <li class="push-r-1-2">
-              {% if csHeader.clientLink %}
-                <a class="" href="{{csHeader.clientLink}}" target="_blank" aria-label="Visit the {{csHeader.client}} website.">
-              {% endif %}
-              {{csHeader.client}}
-              {% if csHeader.clientLink %}
-                </a>
-              {% endif %}
-            </li>
-          </ol>
-        </div>
-        <div class="unit [ xs-1-2 m-1-4 ] island-1-2">
-          <p class="font-alt bold push-1-2">Role</p>
-          <ol class="list-group milli push-0">
-            {% for role in csHeader.role %}
-              <li class="push-r-1-2">{{role}}</li>
-            {% endfor %}
-          </ol>
-        </div>
-        <div class="unit [ xs-1-2 m-1-4 ] island-1-2">
-          <p class="font-alt bold push-1-2">Year</p>
-          <ol class="list-group milli push-0">
-            <li class="push-r-1-2">{{csHeader.year}}</li>
-          </ol>
-        </div>
-      </div>
+      {% endunless %}
     </div>
   </header>
 

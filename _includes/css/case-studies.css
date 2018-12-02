@@ -60,6 +60,18 @@
   background-color: #666;
 }
 
+.cp-hub {
+  background-color: #8f102d;
+}
+
+.cp-rebound {
+  background-color: #8fcc3a;
+}
+
+.cp-hub-secondary {
+  background-color: #333;
+}
+
 .case-study h1 {
   padding-top: 2.6rem;
 }
@@ -242,12 +254,20 @@
     height: 24vh;
   }
 
+  .main-preview-img-left.hub-logos {
+    max-height: 145px;
+  }
+
 }
 
 @media only screen and (min-width: 45em) {
 
   .main-preview-img-left.qn-logo {
     height: 30vh;
+  }
+
+  .main-preview-img-left.hub-logos {
+    max-height: 185px;
   }
 
 }
@@ -340,11 +360,29 @@
     height: 40vh;
   }
 
+  .main-preview-img-left.hub-visuals {
+    max-height: 350px;
+  }
+
+
+  .main-preview-img-left.hub-logos {
+    max-height: 230px;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
 
   .case-study-preview-img-in.main-preview-img-left.qn-logo {
+    right: 55%;
+  }
+
+
+  .main-preview-img-left.hub-logos {
+    max-height: 300px;
+  }
+
+  .main-preview-img-left.case-study-preview-img-in.hub-logos {
     right: 55%;
   }
 

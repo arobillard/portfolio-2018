@@ -8,20 +8,28 @@
       <p>{{caseStudy.shortDesc}}</p>
       <div class="case-study-view-link font-alt bold push-2 mega">
         <a class="inline-block" href="{{site.baseurl}}/{{caseStudy.csLink}}/" aria-label="Link to full {{caseStudy.title}} caseStudy.">
-          <span class="valign-middle inline-block">View case study</span>
+          <span class="valign-middle inline-block">
+            {% if caseStudy.title == "More Fun" %}
+              See more work
+            {% else %}
+              View case study
+            {% endif %}
+          </span>
           <i class="icon i-1 ">
             <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
           </i>
         </a>
       </div>
-      <footer>
-        <h3 class="tags-header push-1-2 kilo no-shadow">Categories</h3>
-        <ol class="list-group-inline milli push-0">
-          {% for cat in caseStudy.category %}
-            <li class="push-r">{{cat}}</li>
-          {% endfor %}
-        </ol>
-      </footer>
+      {% unless caseStudy.title == "More Fun" %}
+        <footer>
+          <h3 class="tags-header push-1-2 kilo no-shadow">Categories</h3>
+          <ol class="list-group-inline milli push-0">
+            {% for cat in caseStudy.category %}
+              <li class="push-r">{{cat}}</li>
+            {% endfor %}
+          </ol>
+        </footer>
+      {% endunless %}
     </div>
   </div>
 </section>
