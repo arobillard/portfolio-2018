@@ -10,9 +10,9 @@
     <div class="nav-bg-photos">
       <img id="home-link-img" class="box-shadow" src="{{site.baseurl}}/images/home-hover.jpg" alt="Preview image of the home page banner.">
       {% for navImages in site.data.case-studies %}
-        <img id="{{navImages.csLink}}-link-img" src="{{site.baseurl}}/images/{{navImages.previewImg}}" alt="{{navImages.previewImgAlt}}">
+        <img id="{{navImages.csLink}}-link-img" src="{{site.baseurl}}/images/{{navImages.navImg}}" alt="{{navImages.navImgAlt}}">
       {% endfor %}
-      <img id="me-link-img" src="{{site.baseurl}}/images/adamheadshot-bw.png" alt="Adam Robillard's headshot.">
+      <img id="me-link-img" src="{{site.baseurl}}/images/adamheadshot-nav.jpg" alt="Adam Robillard's headshot.">
     </div>
     <div class="wrapper gutter">
       {% include nav.html navid="nav" navclass='nav-main bold text-shadow font-alt' ulclass='list-group push-0 tera' liclass='pad-t-1-4 pad-b-1-4' aclass='text-ccc'%}

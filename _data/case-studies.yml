@@ -2,11 +2,13 @@
   metaDesc: Case study of the Polished+ Redo Project designed and developed by Adam Robillard.
   csLink: polished
   layout: case-study
-  previewImg: /polished/laptop-polished-home.png
+  previewImg: /polished/laptop-polished-home.jpg
   previewImgAlt: A laptop showing the home page of Polished+.
+  navImg: /polished/laptop-polished-home-nav.jpg
+  navImgAlt: A laptop showing the home page of Polished+.
   previewSide: right
   prevUnitAlign: unit-pull-m-1-2
-  headerImg: polished/laptop-polished-home.png
+  headerImg: polished/laptop-polished-home.jpg
   headerImgAlt: A laptop showing the home page of Polished+.
   shortDesc: Polished+ is a brand building tool for sports teams that helps non-designers easily create dynamic brands. This project evaluated and redesigned my initial concept to improve the design and functionality of the concept.
   longDesc: Polished+ is a brand building tool for sports teams that helps non-designers easily create dynamic brands. This project recreated a project from my first year of Graphic Design education. It focused on updating the overall design of the website as well as create effecient, reusable code.
@@ -33,8 +35,10 @@
   metaDesc: Case study of the development of the Québec Nordiques rebrand designed by Adam Robillard.
   csLink: quebec-nordiques
   layout: case-study
-  previewImg: quebec-nordiques/quebec-nordiques-preview.png
+  previewImg: quebec-nordiques/quebec-nordiques-preview.jpg
   previewImgAlt: A mock up of the new Québec Nordiques jersey design.
+  navImg: quebec-nordiques/quebec-nordiques-preview-nav.jpg
+  navImgAlt: A mock up of the new Québec Nordiques jersey design.
   previewSide: left qnords-prev
   headerVideoSwitch: true
   headerVideo: >-
@@ -89,11 +93,13 @@
   metaDesc: Case study of The Hub & Rebound's rebrand and website design lead and developed by Adam Robillard.
   csLink: the-hub
   layout: case-study
-  previewImg: the-hub/laptop-hub.png
+  previewImg: the-hub/laptop-hub.jpg
   previewImgAlt: A laptop showing the home page of The Hub.
+  navImg: the-hub/laptop-hub-nav.jpg
+  navImgAlt: A laptop showing the home page of The Hub.
   previewSide: right
   prevUnitAlign: unit-pull-m-1-2
-  headerImg: the-hub/laptop-hub.png
+  headerImg: the-hub/laptop-hub.jpg
   headerImgAlt: A laptop showing the home page of The Hub.
   shortDesc: The Hub & Rebound are a charitable organization in Almonte, Ontario. As project lead, I lead a team of students to develop The Hub & Rebound's new brand and website.
   longDesc: The Hub & Rebound are a charitable organization in Almonte, Ontario. In my role as the project lead, I oversaw the development of the new logos and brand, providing critiques and guidance. I also fully designed and developed the new website using <a href="https://jekyllrb.com/" target="_blank" aria-label="Learn more about building website with Jekyll">Jekyll</a> and <a href="https://www.netlifycms.org/" target="_blank" aria-label="Learn more about building website with Netlify">Netlify</a>.
@@ -147,11 +153,13 @@
   metaDesc: Case study of the AMCES rebrand designed and developed by Adam Robillard.
   csLink: amces
   layout: case-study
-  previewImg: amces/booth.png
+  previewImg: amces/booth-preview.jpg
   previewImgAlt: A conference booth with the AMCES branding.
+  navImg: amces/booth-preview-nav.jpg
+  navImgAlt: A conference booth with the AMCES branding.
   previewSide: left amces-prev
   prevUnitAlign:
-  headerImg: amces/booth-16by9.png
+  headerImg: amces/booth-16by9.jpg
   headerImgAlt: A conference booth with the AMCES branding.
   shortDesc: AMCES is an Association Management company that works with not-for-profit associations. I created their new brand to better reflect the company's professional, forward thinking business practices.
   longDesc: AMCES is an association management firm based in Ottawa, ON that works with national and international not-for-profits to help run their organizations and events. The goal for the rebrand was to modernize their brand to better reflect their professionalism and forward thinking business practices.
@@ -174,8 +182,10 @@
   metaDesc: A collection of designs and artwork designed and developed by Adam Robillard.
   csLink: more-fun
   layout: case-study
-  previewImg: quidcan/quidcan-preview.png
+  previewImg: quidcan/quidcan-preview.jpg
   previewImgAlt: A mock up of the 2018 Team Canada dark jersey.
+  navImg: quidcan/quidcan-preview-nav.jpg
+  navImgAlt: A mock up of the 2018 Team Canada dark jersey.
   previewSide: right
   prevUnitAlign: unit-pull-m-1-2
   headerImg: more-fun/redblacks-collage.jpg
