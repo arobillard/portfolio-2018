@@ -92,6 +92,10 @@ p > a:focus {
 
 /* ---------- Colors ---------- */
 
+.text-fff {
+  color: #fff;
+}
+
 .text-ccc {
   color: #ccc;
 }
@@ -195,6 +199,18 @@ p > a:focus {
 .me p.no-font-adjust {
   font-size: 100%;
   line-height: 1.3;
+}
+
+.not-found .wordmark a {
+  color: #fff;
+}
+
+.not-found .wordmark a:hover {
+  color: var(--color-dark-grey);
+}
+
+.not-found .intro-home .text-fff:hover {
+  color: var(--color-dark-grey);
 }
 
 @media only screen and (min-width: 25em) {

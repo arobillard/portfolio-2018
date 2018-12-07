@@ -1,0 +1,35 @@
+.animate-in {
+  opacity: 0;
+  animation: fadeSlide .75s forwards;
+  animation-timing-function: cubic-bezier(.85, 0, .15, 1);
+}
+
+.animate-in-right {
+  transform: translateX(10rem);
+}
+
+.animate-in-left {
+  transform: translateX(-10rem);
+}
+
+.animate-in-delay-1 {
+  animation-delay: .125s;
+}
+
+.animate-in-delay-2 {
+  animation-delay: .25s;
+}
+
+@keyframes fadeSlide {
+
+  0% {
+    opacity: 0;
+    /* transform: translateY(5rem); */
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+
+}

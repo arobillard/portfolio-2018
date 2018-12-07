@@ -35,6 +35,7 @@ Site: https://sportstemplates.net/
 - Git + GitHub
 - Jekyll
 - Markdown
+- jQuery
 
 ## Hosting
 

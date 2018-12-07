@@ -1,0 +1,20 @@
+---
+layout: default
+pageClass: not-found
+title: Yikes
+---
+<header class="intro-home">
+  <div>
+    <h1 class="push-0 gutter-2">
+      <span class="block animate-in animate-in-right">Yikes...</span>
+      <span class="block animate-in animate-in-right">Page not found.</span>
+    </h1>
+  </div>
+  {% assign prevScroll=site.data.case-studies[0] %}
+  <a class="inline-block pin-cb pad-b-2 giga text-fff" href="{{site.baseurl}}/#{{prevScroll.csLink}}">
+    <i class="icon i-1-1-2 ">
+      <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#left-indicator" /></svg>
+    </i>
+    <span class="valign-middle inline-block">View my case studies</span>
+  </a>
+</header>

@@ -67,6 +67,7 @@
     left .75s cubic-bezier(1, 0, 0, 1);
 }
 
+.not-found .nav-at-top,
 .home .nav-at-top {
   background-color: rgba(51, 51, 51, 0);
   box-shadow: none;
@@ -84,10 +85,12 @@
   z-index: -1;
 }
 
+.not-found .nav-at-top::after,
 .home .nav-at-top::after {
   background-color: var(--color-dark-grey);
 }
 
+.not-found .nav-at-top.tog-nav-open::after,
 .home .nav-at-top.tog-nav-open::after {
   background-color: var(--color-highlight);
 }
