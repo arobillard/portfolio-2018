@@ -103,7 +103,7 @@
   headerImgAlt: A laptop showing the home page of The Hub.
   shortDesc: The Hub & Rebound are a charitable organization in Almonte, Ontario. As project lead, I lead a team of students to develop The Hub & Rebound's new brand and website.
   longDesc: The Hub & Rebound are a charitable organization in Almonte, Ontario. In my role as the project lead, I oversaw the development of the new logos and brand, providing critiques and guidance. I also fully designed and developed the new website using <a href="https://jekyllrb.com/" target="_blank" aria-label="Learn more about building website with Jekyll">Jekyll</a> and <a href="https://www.netlifycms.org/" target="_blank" aria-label="Learn more about building website with Netlify">Netlify</a>.
-  projectLink: https://arobillard.github.io/the-hub-almonte/
+  projectLink: https://the-hub-almonte.github.io/the-hub-almonte/
   projectLinkText: View full website
   category:
     - Branding
