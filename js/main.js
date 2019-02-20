@@ -3,7 +3,9 @@
 
 $('.nav-main a').attr('tabindex', '-1');
 $('.nav-footer-wrap').addClass('hidden');
-$('.tog-nav-holder').addClass('nav-at-top');
+if ($(this).scrollTop() < 50) {
+  $('.tog-nav-holder').addClass('nav-at-top');
+}
 
 // Smooth Scroll
 
@@ -171,19 +173,6 @@ $(function() {
   };
 
 })(jQuery);
-
-// $(window).scroll(function(event) {
-//
-//   $('#section-2').each(function(i, el) {
-//     // var el = $(el);
-//     if ($('#section-2').visible(true)) {
-//       $('#section-2').addClass("bg-dg");
-//     } else {
-//       $('#section-2').removeClass("bg-dg");
-//     }
-//   });
-//
-// });
 
 $(window).scroll(function(event) {
 
