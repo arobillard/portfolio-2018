@@ -20,13 +20,13 @@ layout: default
         <p class="text-center bold giga font-alt">Browse by category:</p>
         <ol class="list-group-inline text-center mf-category-list gutter">
           <li class="push-r">
-            <a class="smooth-scroll" href="#jerseys">Jerseys</a>
+            <a class="smooth-scroll" href="#web">Web Design</a>
           </li>
           <li class="push-r">
-            <a class="smooth-scroll" href="#motion">Motion Graphics</a>
+            <a class="smooth-scroll" href="#jerseys">Jerseys</a>
           </li>
           <li>
-            <a class="smooth-scroll" href="#web">Web Design</a>
+            <a class="smooth-scroll" href="#motion">Motion Graphics</a>
           </li>
         </ol>
       {% endif %}
@@ -37,17 +37,19 @@ layout: default
         </div>
       </div>
       {% else %}
-        {% if csHeader.projectLink %}
-          <a class="block" href="{{csHeader.projectLink}}" target="_blank" aria-label="Visit full {{csHeader.title}} website.">
-        {% endif %}
-          <div class="island">
-            <div class="embed embed-16by9">
-              <img class="embed-item" src="{{site.baseurl}}/images/{{csHeader.headerImg}}" alt="{{csHeader.headerImgAlt}}">
+        {% unless csHeader.title == "More Fun" %}
+          {% if csHeader.projectLink %}
+            <a class="block" href="{{csHeader.projectLink}}" target="_blank" aria-label="Visit full {{csHeader.title}} website.">
+          {% endif %}
+            <div class="island">
+              <div class="embed embed-16by9">
+                <img class="embed-item" src="{{site.baseurl}}/images/{{csHeader.headerImg}}" alt="{{csHeader.headerImgAlt}}">
+              </div>
             </div>
-          </div>
-        {% if csHeader.projectLink %}
-          </a>
-        {% endif %}
+          {% if csHeader.projectLink %}
+            </a>
+          {% endif %}
+        {% endunless %}
       {% endif %}
       {% unless csHeader.removeInfo == true %}
         <div class="grid island-1-2">

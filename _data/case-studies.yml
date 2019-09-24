@@ -1,94 +1,3 @@
-- title: Polished+
-  metaDesc: Case study of the Polished+ Redo Project designed and developed by Adam Robillard.
-  csLink: polished
-  layout: case-study
-  previewImg: /polished/laptop-polished-home.jpg
-  previewImgAlt: A laptop showing the home page of Polished+.
-  navImg: /polished/laptop-polished-home-nav.jpg
-  navImgAlt: A laptop showing the home page of Polished+.
-  previewSide: right
-  prevUnitAlign: unit-pull-m-1-2
-  headerImg: polished/laptop-polished-home.jpg
-  headerImgAlt: A laptop showing the home page of Polished+.
-  shortDesc: Polished+ is a brand building tool for sports teams that helps non-designers easily create dynamic brands. This project evaluated and redesigned my initial concept to improve the design and functionality of the concept.
-  longDesc: Polished+ is a brand building tool for sports teams that helps non-designers easily create dynamic brands. This project recreated a project from my first year of Graphic Design education. It focused on updating the overall design of the website as well as create efficient, reusable code.
-  projectLink: https://arobillard.github.io/polished-plus/
-  projectLinkText: View full website
-  category:
-    - Web Design
-    - Web Development
-    - Motion Graphics
-  client: Algonquin College
-  clientLink: https://algonquindesign.ca
-  role:
-    - Designer
-    - Motion Designer
-    - Web Developer
-  year: 2018
-  nextPrevBG: bg-lg
-  prevTitleCS: More Fun
-  prevLinkCS: more-fun/
-  nextTitleCS: Québec Nordiques
-  nextLinkCS: quebec-nordiques/
-  tags: Web Design, Sports Design, HTML, CSS, Jekyll, Liquid, jQuery
-- title: Québec Nordiques
-  metaDesc: Case study of the development of the Québec Nordiques rebrand designed by Adam Robillard.
-  csLink: quebec-nordiques
-  layout: case-study
-  previewImg: quebec-nordiques/quebec-nordiques-preview.jpg
-  previewImgAlt: A mock up of the new Québec Nordiques jersey design.
-  navImg: quebec-nordiques/quebec-nordiques-preview-nav.jpg
-  navImgAlt: A mock up of the new Québec Nordiques jersey design.
-  previewSide: left qnords-prev
-  headerVideoSwitch: true
-  headerVideo: >-
-    <iframe class="embed-item" src="https://player.vimeo.com/video/302712275?autoplay=1&color=2c8Bd9&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  headerImg: quebec-nordiques/ice-graphic.jpg
-  headerImgAlt: The Québec Nordiques logo at centre ice of a hockey arena.
-  shortDesc: A reimagining of the Québec Nordiques brand, updated to fit in the 2018 NHL design climate. It expands on the nordic symbolism while still remaining connected to its Francophone roots.
-  longDesc: The goal of the Quebec Nordiques rebrand was to modernize the brand and have it stand out as a competitive brand in the modern age National Hockey League (NHL). The Quebec Nordiques team was relocateed to Colorado in the mid-1990s therefore their brand design reflects the 90s design style. The rebrand modernizes the team’s look while still feeling connected with the original brand.
-  projectLink:
-  projectLinkText:
-  category:
-    - Jersey Design
-    - Sports Design
-    - Motion
-  client: Algonquin College
-  clientLink: http://algonquindesign.ca
-  role:
-    - Designer
-  year: 2018
-  prevTitleCS: Polished+
-  prevLinkCS: polished/
-  nextTitleCS: The Hub & Rebound
-  nextLinkCS: the-hub/
-  tags: Jersey Design, Sports Design, Hockey, NHL, Québec, Québec Nordiques, Sports
-# - title: Quidditch Canada
-#   metaDesc: Case study of the development of the Quidditch Canada jerseys over six years designed by Adam Robillard.
-#   csLink: quidditch-canada
-#   layout: case-study
-#   previewImg: quidcan/quidcan-preview.png
-#   previewImgAlt: A mock up of the 2018 Team Canada dark jersey.
-#   previewSide: left qc-prev
-#   headerImg: quidcan/qc-intro-banner.jpg
-#   headerImgAlt: Photo of Quidditch Canada player in light jersey from the back.
-#   shortDesc: Quidditch Canada is the national governing body for the sport of quidditch in Canada. Since 2014, I have designed Team Canada's jersey for the Quidditch World Cup every two years.
-#   longDesc: Since 2014, every second year I have worked with Quidditch Canada to create their National Team jersey for the Quidditch World Cup. With each new iteration of the jersey, I have challenged myself to develop new ways to represent Canada's identity and help the team stand out both on the pitch and off.
-#   projectLink:
-#   projectLinkText:
-#   category:
-#     - Jersey Design
-#     - Sports Design
-#   client: Quidditch Canada
-#   clientLink: http://quidditchcanada.com/
-#   role:
-#     - Designer
-#   year: 2018
-#   prevTitleCS: Polished+
-#   prevLinkCS: polished/
-#   nextTitleCS: TopTable
-#   nextLinkCS: toptable/
-#   tags: Jersey Design, Sports Design, Quidditch, Quidditch Canada, Sports
 - title: The Hub & Rebound
   metaDesc: Case study of The Hub & Rebound's rebrand and website design lead and developed by Adam Robillard.
   csLink: the-hub
@@ -116,39 +25,71 @@
     - Designer
     - Web Developer
   year: 2018
-  prevTitleCS: Québec Nordiques
-  prevLinkCS: quebec-nordiques/
+  nextTitleCS: Québec Nordiques
+  nextLinkCS: quebec-nordiques/
+  prevTitleCS: AMCES Rebrand
+  prevLinkCS: amces/
+  tags: Web Design, HTML, CSS, jQuery, Jekyll, Netlify, Branding, Logo Design
+- title: Québec Nordiques
+  metaDesc: Case study of the development of the Québec Nordiques rebrand designed by Adam Robillard.
+  csLink: quebec-nordiques
+  layout: case-study
+  previewImg: quebec-nordiques/quebec-nordiques-preview.jpg
+  previewImgAlt: A mock up of the new Québec Nordiques jersey design.
+  navImg: quebec-nordiques/quebec-nordiques-preview-nav.jpg
+  navImgAlt: A mock up of the new Québec Nordiques jersey design.
+  previewSide: left qnords-prev
+  headerVideoSwitch: true
+  headerVideo: >-
+    <iframe class="embed-item" src="https://player.vimeo.com/video/302712275?autoplay=1&color=2c8Bd9&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  headerImg: quebec-nordiques/ice-graphic.jpg
+  headerImgAlt: The Québec Nordiques logo at centre ice of a hockey arena.
+  shortDesc: A reimagining of the Québec Nordiques brand, updated to fit in the 2018 NHL design climate. It expands on the nordic symbolism while still remaining connected to its Francophone roots.
+  longDesc: The goal of the Quebec Nordiques rebrand was to modernize the brand and have it stand out as a competitive brand in the modern age National Hockey League (NHL). The Quebec Nordiques team was relocateed to Colorado in the mid-1990s therefore their brand design reflects the 90s design style. The rebrand modernizes the team’s look while still feeling connected with the original brand.
+  projectLink:
+  projectLinkText:
+  category:
+    - Jersey Design
+    - Sports Design
+    - Motion
+  client: Algonquin College
+  clientLink: http://algonquindesign.ca
+  role:
+    - Designer
+  year: 2018
+  nextTitleCS: Spruce Creative
+  nextLinkCS: spruce-creative/
+  prevTitleCS: The Hub & Rebound
+  prevLinkCS: the-hub/
+  tags: Jersey Design, Sports Design, Hockey, NHL, Québec, Québec Nordiques, Sports
+- title: Spruce Creative
+  metaDesc: Case study of the Spruce Creative Website redsign.
+  csLink: spruce-creative
+  layout: case-study
+  previewImg: /spruce/laptop-spruce-home-preview.jpg
+  previewImgAlt: A laptop showing the home page of Spruce Creative.
+  navImg: /spruce/laptop-spruce-home-nav.jpg
+  navImgAlt: A laptop showing the home page of Polished+.
+  previewSide: right
+  prevUnitAlign: unit-pull-m-1-2
+  headerImg: spruce/laptop-spruce-home-preview.jpg
+  headerImgAlt: A laptop showing the home page of Spruce Creative Inc..
+  shortDesc: Spruce Creative Inc. is a design and marketing agency in Ottawa that focuses on building brands that build community. They are story tellers and I got to help them tell their story by redesigning their website.
+  longDesc: Spruce Creative Inc. is a design and marketing agency in Ottawa that focuses on building brands that build community. They are story tellers and I got to help them tell their story by redesigning their website.
+  projectLink: https://arobillard.github.io/polished-plus/
+  projectLinkText: View full website
+  category:
+    - Web Design
+  client: Spruce Creative Inc.
+  clientLink: https://sprucecreative.ca
+  role:
+    - Designer
+  year: 2019
   nextTitleCS: AMCES Rebrand
   nextLinkCS: amces/
-  tags: Web Design, HTML, CSS, jQuery, Jekyll, Netlify, Branding, Logo Design
-# - title: TopTable
-#   metaDesc: Case study of the TopTable pattern library designed and developed by Adam Robillard.
-#   csLink: toptable
-#   layout: case-study
-#   previewImg: laptop-example.png
-#   previewImgAlt: A laptop showing the home page of TopTable.
-#   previewSide: right
-#   prevUnitAlign: unit-pull-m-1-2
-#   headerImg: laptop-example.png
-#   headerImgAlt: A laptop showing the home page of TopTable.
-#   shortDesc: TopTable is an e-commerce website developed with an in-depth pattern library system. It was design to be easy-to-use, with a product-first design mentality.
-#   longDesc: TopTable is an e-commerce pattern library for a table top game store. The pattern library developed a collection of reusable elements to more efficiently build the website. The design goal for the website was to create an e-commerce platform with a focus on ease-of-use and with a product-first design mentality.
-#   projectLink: https://arobillard.github.io/ecommerce-pattern-library/
-#   projectLinkText: View pattern library
-#   category:
-#     - Web Design
-#     - Web Development
-#   client: Algonquin College
-#   clientLink: https://algonquindesign.ca
-#   role:
-#     - Designer
-#     - Web Developer
-#   year: 2018
-#   prevTitleCS: Québec Nordiques
-#   prevLinkCS: quebec-nordiques/
-#   nextTitleCS: AMCES Rebrand
-#   nextLinkCS: amces/
-#   tags: Pattern Library, HTML, CSS, jQuery, Board Games, RPGs
+  prevTitleCS: Québec Nordiques
+  prevLinkCS: quebec-nordiques/
+  tags: Web Design, Sports Design, HTML, CSS, Jekyll, Liquid, jQuery
 - title: AMCES Rebrand
   metaDesc: Case study of the AMCES rebrand designed and developed by Adam Robillard.
   csLink: amces
@@ -173,8 +114,8 @@
   role:
     - Designer
   year: 2018
-  prevTitleCS: The Hub & Rebound
-  prevLinkCS: the-hub/
+  prevTitleCS: Spruce Creative
+  prevLinkCS: spruce-creative/
   nextTitleCS: More Fun
   nextLinkCS: more-fun/
   tags: Branding, AMCES, Association Management, Logo Design
@@ -196,7 +137,40 @@
   projectLinkText:
   prevTitleCS: AMCES Rebrand
   prevLinkCS: amces/
-  nextTitleCS: Polished+
-  nextLinkCS: polished/
+  nextTitleCS: The Hub & Rebound
+  nextLinkCS: the-hub/
   tags: Motion, Jerseys, Design, Graphic Design
   removeInfo: true
+# - title: Polished+
+#   metaDesc: Case study of the Polished+ Redo Project designed and developed by Adam Robillard.
+#   csLink: polished
+#   layout: case-study
+#   previewImg: /polished/laptop-polished-home.jpg
+#   previewImgAlt: A laptop showing the home page of Polished+.
+#   navImg: /polished/laptop-polished-home-nav.jpg
+#   navImgAlt: A laptop showing the home page of Polished+.
+#   previewSide: right
+#   prevUnitAlign: unit-pull-m-1-2
+#   headerImg: polished/laptop-polished-home.jpg
+#   headerImgAlt: A laptop showing the home page of Polished+.
+#   shortDesc: Polished+ is a brand building tool for sports teams that helps non-designers easily create dynamic brands. This project evaluated and redesigned my initial concept to improve the design and functionality of the concept.
+#   longDesc: Polished+ is a brand building tool for sports teams that helps non-designers easily create dynamic brands. This project recreated a project from my first year of Graphic Design education. It focused on updating the overall design of the website as well as create efficient, reusable code.
+#   projectLink: https://arobillard.github.io/polished-plus/
+#   projectLinkText: View full website
+#   category:
+#     - Web Design
+#     - Web Development
+#     - Motion Graphics
+#   client: Algonquin College
+#   clientLink: https://algonquindesign.ca
+#   role:
+#     - Designer
+#     - Motion Designer
+#     - Web Developer
+#   year: 2018
+#   nextPrevBG: bg-lg
+#   prevTitleCS: More Fun
+#   prevLinkCS: more-fun/
+#   nextTitleCS: Québec Nordiques
+#   nextLinkCS: quebec-nordiques/
+#   tags: Web Design, Sports Design, HTML, CSS, Jekyll, Liquid, jQuery
