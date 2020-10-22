@@ -2,7 +2,7 @@
 ---
 {% for sigs in site.data.signatures %}
 <div style="color: #004869; font-family: Raleway, sans-serif">
-  <p style="font-size: 1.25rem; margin: 0; font-weight: bold;">{{sigs.name}}</p>
+  <p style="font-size: 1.25rem; margin: 0; font-weight: bold;">{{sigs.name}}{% if sigs.pronouns %} <span style="font-weight: normal; font-size: 1rem;">({{sigs.pronouns}}){% endif %}</span></p>
   <em style="color: #1c9aa6; display: block; margin-bottom: 1rem; font-style: normal;">{{sigs.title}}</em>
   <div>
     <a style="color: #1c9aa6;" href="mailto:{{sigs.email}}@sprucecreative.ca">{{sigs.email}}@sprucecreative.ca</a>
@@ -22,22 +22,3 @@
 </div>
 <div style="padding: 4rem 0;"></div>
 {% endfor %}
-<div style="color: #004869; font-family: Raleway, sans-serif">
-  <strong style="font-size: 1.25rem; display: block;">Lauren Olson</strong>
-  <em style="color: #1c9aa6; display: block; margin-bottom: 1rem; font-style: normal;">Digital Strategist</em>
-  <div>
-    <a style="color: #1c9aa6;" href="mailto:{{sigs.email}}@sprucecreative.ca">lauren@sprucecreative.ca</a>
-  </div>
-  <div style="margin-bottom: 2rem;">
-    <a style="color: #004869; text-decoration: none;" href="tel:+16138797233">613 879 7233</a>
-  </div>
-  <div>
-    <img style="width: 1.5rem;" src="https://www.sprucecreative.ca/wp-content/uploads/2019/09/sprig.png" alt="">
-  </div>
-  <strong style="color: #1c9aa6; font-size: 1.125rem;">Spruce Creative Inc.</strong>
-  <address style="font-style: normal;">
-    145 Spruce Street, Suite 200<br>
-    Ottawa, ON K1R 6P1
-  </address>
-  <a style="color: #1c9aa6;" href="https://sprucecreative.ca">sprucecreative.ca</a>
-</div>
