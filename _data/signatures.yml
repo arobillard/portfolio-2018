@@ -10,17 +10,17 @@
   title: Account Manager
   email: cindy
   phone: 103
-  pronouns: sher/her
+  pronouns: she/her
 - name: Nina Jane Drystek
   title: Writer & Project Manager
   email: nina
   phone: 104
-  pronouns: sher/her
+  pronouns: she/her
 - name: Nadia Collins
   title: Senior Graphic Designer
   email: nadia
   phone: 105
-  pronouns: sher/her
+  pronouns: she/her
 - name: Rose Seto
   title: Web Developer
   email: rose
@@ -38,6 +38,8 @@
 - name: Joseph Mathieu
   title: Writer/Project Manager
   email: joseph
+  cell: 613 614 6284
+  pronouns: he/him
 - name: Anne Yang
   title: Social Media Manager
   email: anne
