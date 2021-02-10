@@ -2,12 +2,10 @@
   title: Partner & Content Director
   email: andrew
   phone: 101
-  pronouns: he/him
 - name: Paul Marconi
   title: Partner & Creative Director
   email: paul
   phone: 102
-  pronouns: he/him
 - name: Cindy MacBride
   title: Account Manager
   email: cindy
@@ -27,7 +25,6 @@
   title: Web Developer
   email: rose
   phone: 107
-  pronouns: sher/her
 - name: Sho Sengupta
   title: Communications and Account Strategist
   email: sho
@@ -38,3 +35,9 @@
   email: adam
   phone: 109
   pronouns: he/him
+- name: Joseph Mathieu
+  title: Writer/Project Manager
+  email: joseph
+- name: Anne Yang
+  title: Social Media Manager
+  email: anne

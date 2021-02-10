@@ -2,13 +2,14 @@
 ---
 {% for sigs in site.data.signatures %}
 <div style="color: #004869; font-family: Raleway, sans-serif">
-  <p style="font-size: 1.25rem; margin: 0; font-weight: bold;">{{sigs.name}}{% if sigs.pronouns %} <span style="font-weight: normal; font-size: 1rem;">({{sigs.pronouns}}){% endif %}</span></p>
+  <p style="font-size: 1.25rem; margin: 0; font-weight: bold;">{{sigs.name}}{% if sigs.pronouns %} <span
+      style="font-weight: normal; font-size: 1rem;">({{sigs.pronouns}}){% endif %}</span></p>
   <em style="color: #1c9aa6; display: block; margin-bottom: 1rem; font-style: normal;">{{sigs.title}}</em>
   <div>
     <a style="color: #1c9aa6;" href="mailto:{{sigs.email}}@sprucecreative.ca">{{sigs.email}}@sprucecreative.ca</a>
   </div>
   <div style="margin-bottom: 2rem;">
-    <a style="color: #004869; text-decoration: none;" href="tel:+16134820603">613 482 0603 x {{sigs.phone}}</a>
+    <a style="color: #004869; text-decoration: none;" href="tel:+16134820603">613 482 0603{% if sigs.phone %} x {{sigs.phone}}{% endif %}</a>
   </div>
   <div>
     <img style="width: 1.5rem;" src="https://www.sprucecreative.ca/wp-content/uploads/2019/09/sprig.png" alt="">
