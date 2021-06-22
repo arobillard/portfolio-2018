@@ -7,6 +7,7 @@
   email: paul
   cell: 613 266 9802
   phone: 102
+  pronouns: he/him
 - name: Cindy MacBride
   title: Account Manager
   email: cindy
@@ -44,4 +45,12 @@
 - name: Anne Yang
   title: Social Media Manager
   email: anne
+  pronouns: she/her
+- name: Cody Purcell
+  title: Communications Coordinator
+  email: cody
+  pronouns: he/him
+- name: Danielle Galacio
+  title: Graphic Designer
+  email: danielle
   pronouns: she/her
