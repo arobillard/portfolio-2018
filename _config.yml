@@ -1,4 +1,4 @@
-baseurl: ""
-exclude: ['README.md']
+baseurl: "portfolio-2018"
+exclude: ["README.md"]
 permalink: pretty
 port: 4001
